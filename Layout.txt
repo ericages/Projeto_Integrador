@@ -1,7 +1,0 @@
-Site de oferta de serviços.
-
-Cores: Azul, verde, amarelo.
-
-1 - Página principal com ofertas em destaque
-2 - Página de cadastro (nome, contato, qual serviço presta/oferece, espaço para foto [opcional])
-3 - Página de depoimentos/comentários
