@@ -1,0 +1,21 @@
+Regras de Negócio
+
+1. Cadastro e Verificação: Prestadores de serviço devem se cadastrar e ser verificados (e-mail, telefone, documentos).
+2. Política de Privacidade: Dados dos usuários e prestadores protegidos de acordo com a LGPD.
+3. Pagamento Seguro: Métodos de pagamento confiáveis, como PIX, PayPal, PicPay.
+
+Regras para Prestadores
+1. Perfil Completo: Exigir informações precisas e atualizadas.
+2. Avaliação e Reputação: Sistema de avaliação para garantir qualidade.
+3. Resposta Rápida: Prazo de 24H para resposta a solicitações.
+4. Política de Cancelamento: Cancelamentos por parte do solicitante serão permitidos com reembolso total até 6H após o serviço ter sido aceito. Após 6H, será cobrado 30% do valor acertado.
+Cancelamentos por parte do prestador serão permitidos até 6H após o serviço ter sido aceito, com devolução do valor integral.
+
+Regras para Usuários
+1. Avaliação de Serviços: Sistema de avaliação para prestadores.
+2. Suporte: Fornecer canal de suporte.
+
+Regras de Serviços
+1. Categorias e Subcategorias: Organizar serviços oferecidos.
+2. Descrição Detalhada: Exigir descrição clara dos serviços.
+3. Prazos de Entrega: Entrega no máximo 5 dias após o aceite do serviço, mas isso será combinado entre o contratante e o prestador.
