@@ -1,0 +1,136 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.topo {
+  background-color: #0c075e;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 100px;
+}
+
+.logo_topo {
+  height: 50px;
+  width: 110px;
+}
+
+.icons {
+  height: 30px;
+  width: 40px;
+  padding: 0%;
+  margin: 0%;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+}
+
+input[type="text"] {
+  margin-top: -2px;
+  height: 13px;
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px 0 0 10px;
+  font-size: 16px;
+}
+
+.button_pesquisa {
+  margin-top: -2px;
+  height: 35px;
+  border: none;
+  background-color: #ff0084;
+  color: white;
+  font-size: 16px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+form input[type="text"] button {
+  margin-left: left;
+}
+
+.button_pesquisa:hover {
+  background-color: black;
+}
+
+header ul li button {
+  width: 70px;
+  margin-top: -2px;
+  height: 35px;
+  font-size: 15px;
+  border: none;
+  border-radius: 9px;
+  background-color: #ff0084;
+  color: white;
+  cursor: pointer;
+}
+
+.topo span {
+  font-size: 1.5em;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+}
+
+header ul li {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+main {
+  padding-left: 280px;
+}
+
+main p {
+  padding-left: 50px;
+}
+
+.rodape {
+  background-color: black;
+  color: white;
+  text-align: center;
+  display: flex;
+  padding: 10px 100px;
+  justify-content: space-evenly;
+}
+
+.rodape ul li {
+  list-style: none;
+}
+
+.rodape a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo_termos_uso {
+  width: 100px;
+}
+
+.rodape .redes-sociais img {
+  align-items: center;
+  display: inline;
+  margin-right: 10px;
+  height: 20px;
+  width: 25px;
+  margin-top: 5px;
+}
+
+.informacoes {
+  display: inline-flexbox;
+  justify-content: center;
+  padding-top: 48px;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #333;
+}
