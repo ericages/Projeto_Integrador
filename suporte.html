@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Suporte</title>
+        <link rel="stylesheet" href="css/suporte.css">
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                background: #f4f3f5;
+                padding: 0%;
+                margin: 0%;
+            }
+
+            .topo {
+                position: static;
+                display: block;
+                align-items: center;
+                height: 480px;
+                width: 100%;
+                background-color: #0C075E;
+                color: white;
+            }
+
+            .logo-topo {
+                display: flex;
+                float: left;
+                justify-content: center;
+                align-items: center;
+                padding-top: 20px;
+                padding-left: 50px;
+                height: 60px;
+                width: 140px;
+            }
+
+            .text-topo {
+                position: static;
+                display: flex;
+                padding-top: 30px;
+                padding-left: 15px;
+                font-size: 10px;
+            }
+
+            .topo .titulo {
+                position: static;
+                padding-left: 650px;
+                font-size: 50px;
+                padding-top: 30px;
+            }
+
+            .form-pesquisa {
+                display: flex;
+                justify-content: center;
+                margin-top: 0;
+            }
+            input[type="text"] {
+               height: 50px;
+               width: 800px;
+               font-size: 20px;
+               border-radius: 20px;
+               padding: 5px;
+            }
+
+            .button-pesquisa {
+                height: 67px;
+                width: 150px;
+                border-radius: 15px;
+                font-size: 20px;
+                background-color: #FF0084;
+                color: white;
+            }
+
+            .bloco-informacao {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 50px;
+                padding-top: 80px;
+            }
+
+            
+
+            div .bloco-artigo {
+                background-color: black;
+                color: white;
+                padding: 20px 35px;
+                margin-right: 20px;
+                border-radius: 20px;
+            }
+
+            .bloco-ticket {
+                background-color: black;
+                color: white;
+                padding: 20px 35px;
+                border-radius: 20px;
+            }
+
+            .titulo {
+                position: fixed;
+                justify-content: center;
+                align-items: center;
+                padding-top: -500px;
+            }
+
+            .base {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 50px;
+                margin: 20px;
+            }
+
+            .base img {
+                display: flex;
+                margin-right: 150px;
+                height: 35px;
+                width: 33px;
+            }
+
+            .base-titulo {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+            }
+
+            .base-passos {
+                background-color: black;
+                color:white;
+                margin: 20px;
+                padding: 20px 35px;
+                border-radius: 20px;
+            }
+
+            .base-comprando {
+                background-color: black;
+                color: white;
+                margin: 20px;
+                padding: 20px 35px;
+                border-radius: 20px;
+            }
+
+            .base-vendendo {
+                background-color: black;
+                color: white;
+                margin: 20px;
+                padding: 20px 35px;
+                border-radius: 20px;
+            }
+
+            .base-suporte {
+                background-color: black;
+                color: white;
+                margin: 20px;
+                padding: 20px 35px;
+                border-radius: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="topo">
+            <a href="#" class="t-topo"><img src="./logo.png" alt="logo" class="logo-topo"></a>
+
+            <div class="text-topo">
+                <h1>Central de Ajuda</h1>
+            </div>
+
+            <h1 class="titulo">Olá, como podemos te<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ajudar?</h1>
+                <form action="pesquisa" method="get" class="form-pesquisa">
+                    <input type="text" nome"pesquisa" placeholder="Digitar o termo de pesquisa aqui...">
+                    <button type="button" class="button-pesquisa">Pesquisar</button>
+                </form> 
+        </div>
+        <div class="bloco-informacao">
+            <div class="bloco-artigo">
+                    <h3>Procurar artigos</h3>
+                    <p>Explore as instruções e<br>conheça as melhores<br>práticas.</p> 
+             </div>
+            <div class="bloco-ticket">
+                <h3>Enviar um ticket</h3>
+                <p>Descreva seu problemas<br>preenchendo o<br>formulário do ticket</p>
+            </div>
+        </div>
+        <h1 class="base-titulo">Base de conhecimento</h1>
+        <div class="base">
+            <div class="base-passos">
+                <img src="./camada.png" alt="imagem">
+                <h3>Primeiros passos</h3>
+                <p>Tudo que você precisa saber<br>para começar na SerVify.</p>
+            </div>
+            <div class="base-comprando">
+                <img src="./camada.png" alt="imagem">
+                <h3>Comprando na SerVify</h3>
+                <p>Guia para compradores,<br>incluindo como realizar.</p>
+            </div>
+            <div class="base-vendendo">
+                <img src="./camada.png" alt="Imagem">
+                <h3>Vendendo no SerVify</h3>
+                <p>Recursos essenciais para<br>vendedores.</p>
+            </div>
+            <div class="base-suporte">
+                <img src="./camada.png" alt="Imagem">
+                <h3>Suporte e Segurança</h3>
+                <p>Informações importante sobre<br>segurança na plataforma.</p>
+            </div>
+        </div>
+    </body>
+</html>
