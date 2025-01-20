@@ -5,8 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SerVify</title>
 </head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background-color: #0C075E;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    
+    }
+    h1 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+    }
+    
+    footer {
+        text-align: center;
+        background-color: #0C075E;
+        color: white;
+        padding: 20px;
+        position: flex;
+        width: 100%;
+        bottom: 0;
+    }
+</style>
 <body>
-    <h1>Cadastro de Colaborador</h1>
+    <header>
+        <img height="60" width="90" src="./logo.png">
+        <h1>Cadastro de Colaborador</h1>
+        <p>Preencha seus dados corretamente e trabalhe conosco!</p>
+    </header>
     
     <form action="/cadastrar-colaborador" method="post">
         <div>
@@ -76,5 +109,9 @@
         
         <button type="submit">Cadastrar</button>
     </form>
+    <footer>
+        <p>&copy; 2025 Servify - Todos os direitos reservados</p>
+    </footer>
+
 </body>
 </html>
