@@ -1,0 +1,130 @@
+* {
+	margin: 0;
+	padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #0c045c;
+    margin: 0px;
+}
+
+#servify-banner {
+    width: 200px;
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+#pesquisa-principal {
+    width: 250px;
+    height: 35px;
+    border-radius: 20px;
+    position: absolute;
+    top: 30px;
+}
+
+#cadastro {
+    display: inline;
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    padding: 10px;
+    text-align: center;
+}
+
+#banner {
+    background-color: black;
+    color: white;
+    padding: 100px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 125px;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(249, 61, 255);
+    padding: 20px;
+}
+
+td {
+    padding: 10px 100px;
+    text-align: center;
+}
+
+.pfp {
+    border-radius: 50%;
+    width: 100px;
+}
+
+.user_profile {
+    width: 100px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    width: 100%;
+}
+
+.profiles {
+    display: flex;
+}
+
+.ex_trabalho {
+    width: 200px;
+}
+
+.trabalhos {
+    display: flex;
+}
+
+.mesa {
+    width: 100px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    width: 100%;
+}
+
+th {
+    padding: 10px 50px;
+}
+
+.main_colab {
+    display: flex;
+}
+
+.foto {
+    border: 1px solid grey;
+    height: 300px;
+}
+
+.precos {
+    border: 1px solid grey;
+    height: 300px;
+}
+
+.desc {
+    border: 1px solid grey;
+    height: 600px;
+}
+
+.contrante {
+    border: 1px solid grey;
+    height: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+/* {
+    border: 1px solid red;
+}
