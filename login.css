@@ -1,0 +1,122 @@
+body{
+    font-family:"Josefin Sans",sans-serif;
+    color: #ffffff;
+    background: linear-gradient( to bottom, #000, #000, #000, #ff0084);
+    margin: 44.5px;
+    padding: 0;
+}
+
+table{
+    font-family: "Jomhuria", sans-serif;
+    font-size: 40px;
+    margin: 20px; 
+    padding: 0;
+   
+}
+h1{
+    font-size: 80px;
+    margin-right: 260px;
+    margin-top: 20px;
+    padding:0px 50px 0px 0px; 
+}
+.title-um{
+    color: #ff0084;
+    width: 50%;
+  }
+.title-dois {
+    color: #ffffff;
+    width: 50%;
+  }
+
+  h2{
+    font-size: 80px;
+    color: #ff0084;
+    text-align: left;
+    letter-spacing: 2px;
+    padding: 0px 0px 0px 50px;
+    margin: 0px 0px 10px 0px;
+  }
+
+.servify{
+    padding: 0px 100px 0px 0px;
+}
+.servify a{
+    font-family:"abel",sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #ffffff;
+}
+.servify a:hover{
+    text-decoration: underline;
+    color: #cac9c9;
+}
+.apresentacao{
+    margin-left: 50px;
+    margin-bottom: 60px;
+    text-align: justify;
+    font-family: "jumhuria", sans-serif;
+    font-size: 18px;
+}
+
+fieldset{
+    background-color: #ffffff;
+    color: black;
+    border-radius: 30px;
+}
+
+.form{
+    font-family:"abel",sans-serif;
+    font-size: 15px; 
+}
+.form label{
+    letter-spacing: 3px;
+    margin-right: 230px;
+}
+.form input{
+    width: 280px;
+    height: 30px;
+    border-width: 1.5px;
+    border-radius: 5px;
+}
+
+.entrar{
+    font-size: 15px;  
+    
+}
+.entrar button{
+    background-color: #ff0084;
+    width: 280px;
+    height: 50px;
+    border-width: 1.5px;
+    border-color:#ff0084;
+    border-radius: 5px;
+} 
+.entrar button:hover{
+    border-color: #70003a;
+    border-width: 2px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.288);
+}
+.entrar a{
+    
+    font-family: "Jomhuria", sans-serif;
+    font-size: 50px; 
+    color: #ffffff;
+    text-decoration: none;
+}
+.entrar a:hover{
+    color:#ffffffc7;
+}
+
+.esquci-criar a{
+    font-family: "abel", sans-serif;
+    color: rgb(11, 17, 31);
+    letter-spacing: 1px;
+    text-decoration: none;
+    padding:0px 40px 0px 40px;
+}
+.esquci-criar a:hover{
+    text-decoration: underline;
+    color: rgb(26, 52, 109);
+}
+   
