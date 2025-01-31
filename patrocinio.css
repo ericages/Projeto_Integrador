@@ -1,0 +1,131 @@
+
+body{
+  font-family:"abel",sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+ 
+}
+
+header{
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.288);
+  
+}
+h1{
+  font-size: 50px;
+  margin: 0;
+  padding: 10px 0px;
+  color: #ffffffe8;
+  text-shadow: 2px 2px 8px #000000; /* Sombra preta com deslocamento de 2px e raio de desfoque de 4px */
+  
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+nav li {
+  display: inline-block;
+  margin: 0 20px; /* Aumenta a margem para 20px */
+  padding: 10px 20px; 
+  border-radius: 10px;
+  
+}
+
+
+nav a {
+  text-decoration: none;
+  color: #00000081;
+  font-size: 25px;
+  text-shadow: 0px 0px 2px rgb(0, 0, 0);
+}
+
+nav a:hover{
+  text-decoration:underline;
+  color: #000000d8;
+  margin: 0;
+
+}
+
+
+.gallery {
+    align-items: center;
+    text-align: center;
+    margin: 30px;
+    border: 0px solid #59c2ff00;
+    border-radius:70px 70px 0 0;
+    float: left;
+    width: 380px;
+
+  }
+  
+  .gallery:hover {
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.24);
+    color: rgba(34, 34, 34, 0.822);
+  }
+  
+  .gallery img {
+    width: 100%;
+    border-radius: 15%;
+    align-items: center;
+    text-align: center;
+    
+  }
+  
+  .desc {
+    padding: 15px;
+    text-align: center;
+    font-size: 25px;
+  }
+
+
+  footer{
+    margin-top: 80px;
+    background-color: black;
+    width: 100%;
+    height: auto;
+    float: left;
+    color: #ffffff;
+    font-size: 17px;
+    text-align: center;
+    align-items: center;
+  }
+
+table{
+  width: 100%;
+  padding: 0px 0px 0px 110px;
+  
+}
+table th{
+  font-size: 30px;
+  letter-spacing: 2px; /* Espaçamento de 2 pixels entre as letras */
+
+}
+table a{
+  color: #d4e7fa;
+  letter-spacing: 1px; /* Espaçamento de 2 pixels entre as letras */
+}
+table a:hover{
+  color: #d4d4d4;
+
+}
+
+.logo-imbativel{
+  width: 360px;
+  height: 2px;
+}
+
+.informacoes a{
+  color: #ffffff;
+}
+.informacoes a:hover{
+  color: #b4b3b3;
+}
+
