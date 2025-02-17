@@ -1,35 +1,35 @@
 * {
 	margin: 0;
 	padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:"abel",sans-serif;
 }
 
 header {
     background-color: #0c045c;
-    margin: 0px;
+    padding: 5px;
 }
 
 #servify-banner {
-    width: 200px;
+    /*width: 200px;
     padding-left: 50px;
-    padding-top: 10px;
+    padding-top: 10px;*/
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
 }
 
 #pesquisa-principal {
     width: 250px;
     height: 35px;
     border-radius: 20px;
-    position: absolute;
+    display: inline-block;
     top: 30px;
 }
 
 #cadastro {
-    display: inline;
-    position: absolute;
-    top: 30px;
-    right: 0px;
-    padding: 10px;
-    text-align: center;
+    display: inline-block;
+    margin-left: 55%;
 }
 
 #banner {
@@ -38,58 +38,9 @@ header {
     padding: 100px;
 }
 
-footer {
-    background-color: black;
-    color: white;
-    padding: 125px;
-    text-align: center;
-}
-
-h2 {
+.subtitulos {
     color: rgb(249, 61, 255);
     padding: 20px;
-}
-
-td {
-    padding: 10px 100px;
-    text-align: center;
-}
-
-.pfp {
-    border-radius: 50%;
-    width: 100px;
-}
-
-.user_profile {
-    width: 100px;
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;
-    width: 100%;
-}
-
-.profiles {
-    display: flex;
-}
-
-.ex_trabalho {
-    width: 200px;
-}
-
-.trabalhos {
-    display: flex;
-}
-
-.mesa {
-    width: 100px;
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;
-    width: 100%;
-}
-
-th {
-    padding: 10px 50px;
 }
 
 .main_colab {
@@ -116,14 +67,82 @@ th {
     height: 300px;
 }
 
+/*Estilização do Carousel de fotos de usuários*/
 
+.pfp {
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+}
 
+.perfil {
+    display: inline-block;
+}
 
+.faixa {
+    display: flex;
+    justify-content: space-around;
+}
 
+h5 {
+    text-align: center;
+}
 
+.botaoRosa {
+    position: relative;
+    padding: 5px 12px;
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    background-color: #7d2ae8;
+    transition: all 0.2s ease;
+}
 
+/*Footer*/
 
+footer{
+    margin-top: 80px;
+    background-color: black;
+    width: 100%;
+    height: auto;
+    float: left;
+    color: #ffffff;
+    font-size: 17px;
+    text-align: center;
+    align-items: center;
+  }
 
+table{
+  width: 100%;
+  padding: 0px 0px 0px 110px;
+  
+}
+table th{
+  font-size: 30px;
+  letter-spacing: 2px; /* Espaçamento de 2 pixels entre as letras */
+
+}
+table a{
+  color: #d4e7fa;
+  letter-spacing: 1px; /* Espaçamento de 2 pixels entre as letras */
+}
+table a:hover{
+  color: #d4d4d4;
+
+}
+
+.logo-imbativel{
+  width: 360px;
+  height: 2px;
+}
+
+.informacoes a{
+  color: #ffffff;
+}
+.informacoes a:hover{
+  color: #b4b3b3;
+}
 
 /* {
     border: 1px solid red;
