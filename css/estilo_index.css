@@ -48,6 +48,7 @@ header {
 }
 
 .foto {
+    
     border: 1px solid grey;
     height: 300px;
 }
@@ -59,14 +60,26 @@ header {
 
 .desc {
     border: 1px solid grey;
+    color: #000;
     height: 600px;
+    text-align: justify;
+    padding-top: 10px;
 }
 
 .contrante {
     border: 1px solid grey;
     height: 300px;
 }
-
+h1 {
+    color: #000;
+    text-align: center;
+    font-size: small;
+}
+h2 {
+    color: #000;
+    text-align: center;
+    font-size: xx-small;
+}
 /*Estilização do Carousel de fotos de usuários*/
 
 .pfp {
@@ -97,6 +110,10 @@ h5 {
     cursor: pointer;
     background-color: #7d2ae8;
     transition: all 0.2s ease;
+    text-decoration: none;
+}
+.botaoRosa:hover {
+    background-color: #0056b3;
 }
 
 /*Footer*/
