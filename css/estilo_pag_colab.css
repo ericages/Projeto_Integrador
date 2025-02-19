@@ -48,38 +48,54 @@ header {
 }
 
 .main_colab {
-    display: flex;
+    display: flexbox;
 }
 
 .foto {  
-    border: 1px solid grey;
-    width: 1000px;
+    border: 2px solid #0c045c;
+    width: 500px;
     height: 250px;
 }
 
 #product {
     height: auto;
-    width: 500px;
+    width: 100%;
     height: 100%;
 }
 
+main {
+    margin: 20px;
+    padding: 20px;
+}
+
 .precos {
-    border: 1px solid grey;
-    height: 300px;
+    border: 2px solid #0c045c;
+    height: 200px;
+    width: 500px;
+    position: absolute;
+    right: 100px;
+    top: 100px;
+    text-align: center;
 }
 
 .desc {
-    border: 1px solid grey;
+    border: 2px solid #0c045c;
     color: #000;
-    height: 600px;
-    text-align: justify;
-    padding-top: 10px;
-}
+    height: 300px;
+    width: 90%;
+    position: absolute;
+    top: 460px;
 
+}
 .contrante {
-    border: 1px solid grey;
+    border: 2px solid #0c045c;
     height: 300px;
 }
+
+hr {
+    color: #0c045c;
+}
+
 h1 {
     color: #000;
     text-align: center;
