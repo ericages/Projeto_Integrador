@@ -1,56 +1,8 @@
-* {
-	margin: 0;
-	padding: 0;
-    font-family:"abel",sans-serif;
-}
-
-header {
-    background-color: #0c045c;
-    padding: 5px;
-}
-
-#servify-banner {
-    /*width: 200px;
-    padding-left: 50px;
-    padding-top: 10px;*/
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 10%;
-}
-
-#pesquisa-principal {
-    width: 250px;
-    height: 35px;
-    border-radius: 20px;
-    display: inline-flex;
-    top: 30px;
-}
-
-#cadastro {
-    display: inline-block;
-    margin-left: 55%;
-}
-
-#banner {
-    background-color: black;
-    color: white;
-    padding: 100px;
-}
-.botaoRosa {
-    position: relative;
-    padding: 5px 12px;
-    border-radius: 6px;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    background-color: #7d2ae8;
-    transition: all 0.2s ease;
-}
 body{
+    font-family:"Josefin Sans",sans-serif;
     color: #ffffff;
     background: linear-gradient( to bottom, #000, #000, #000, #ff0084);
-    margin: 44.5px;
+    margin: 40px;
     padding: 0;
 }
 
@@ -67,6 +19,7 @@ h1{
     margin-top: 20px;
     padding:0px 50px 0px 0px; 
 }
+
 .title-um{
     color: #ff0084;
     width: 50%;
@@ -167,3 +120,7 @@ fieldset{
     text-decoration: underline;
     color: rgb(26, 52, 109);
 }
+
+  .erro {
+    border: 20px solid red;
+  }
