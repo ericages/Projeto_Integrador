@@ -23,7 +23,7 @@ header {
     width: 250px;
     height: 35px;
     border-radius: 20px;
-    display: inline-flex;
+    display: inline-block;
     top: 30px;
 }
 
@@ -37,45 +37,9 @@ header {
     color: white;
     padding: 100px;
 }
-.botaoRosa {
-    position: relative;
-    padding: 5px 12px;
-    border-radius: 6px;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    background-color: #7d2ae8;
-    transition: all 0.2s ease;
-}
-body {
-    box-sizing: border-box;
-}
 
-.topo {
-    background-color: #0C075E;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 7px 100px;
-}
-
-.logo_topo {
-    height: 50px;
-    width: 110px;
-}
-
-.icons {
-    height: 30px;
-    width: 40px;
-    padding: 0%;
-    margin: 0%;
-}
-
-form {
-    display: flex;
-    justify-content: center;
-    margin-top: 0;
+#buttonCenter {
+    text-align: center;
 }
 
 input[type="text"] {
@@ -88,23 +52,29 @@ input[type="text"] {
     font-size: 16px;
 }
 
-.button_pesquisa {
-    margin-top: -2px;
-    height: 35px;
+
+
+.botaoRosa {
+    position: relative;
+    margin: 10px;
+    padding: 10px 15px;
+    border-radius: 13px;
     border: none;
-    background-color: #FF0084;
-    color: white;
-    font-size: 16px;
-    border-radius: 0 4px 4px 0;
+    color: #fff;
     cursor: pointer;
+    background-color: #FF0084;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.botaoRosa:hover {
+    background-color: #0056b3;
 }
 
 form input[type="text"] button{
     margin-left: left;
-}
-
-.button_pesquisa:hover {
-    background-color: black;
 }
 
 header ul li button {
@@ -119,112 +89,76 @@ header ul li button {
     cursor: pointer;
 }
 
-
-
-.topo span {
-    font-size: 1.5em;
-}
-
-header ul {
-    display: flex;
-    list-style: none;
-}
-
-header ul li {
-    margin-left: 10px;
-    cursor: pointer;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 0;
+    color: #333;
 }
 
 main {
-    padding-left: 280px;
+    width: 80%;
+    margin: 30px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-main p {
-    padding-left: 50px;
+h1, h2 {
+    color: #FF0084;
+    font-weight: bold;
 }
 
-.rodape {
-    background-color: black;
-    color: white;
-    text-align: center;
-    display: flex;
-    padding: 10px 100px;
-    justify-content: space-evenly;
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
-.rodape ul li{
-    list-style: none;
-}
-
-.rodape a {
-    color: white;
-    text-decoration: none;
-}
-
-.logo_termos_uso {
-    width: 100px;
-}
-
-.rodape .redes-sociais img {
-    align-items: center;
-    display: inline;
-    margin-right: 10px;
-    height: 20px;
-    width: 25px;
-    margin-top: 5px;
-}
-
-.informacoes {
-    display: inline-flexbox;
-    justify-content: center;
-    padding-top: 48px;
+h2 {
+    font-size: 1.8em;
     margin-top: 20px;
-    font-size: 14px;
-    color: #333;
 }
-footer{
-    margin-top: 80px;
-    background-color: black;
-    width: 100%;
-    height: auto;
-    float: left;
-    color: #ffffff;
-    font-size: 17px;
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 1.1em;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+footer {
     text-align: center;
-    align-items: center;
-  }
-
-table{
-  width: 100%;
-  padding: 0px 0px 0px 110px;
-  
-}
-table th{
-  font-size: 30px;
-  letter-spacing: 2px; /* Espaçamento de 2 pixels entre as letras */
-
-}
-table a{
-  color: #d4e7fa;
-  letter-spacing: 1px; /* Espaçamento de 2 pixels entre as letras */
-}
-table a:hover{
-  color: #d4d4d4;
-
+    padding: 20px 0;
+    background-color: #0c045c;
+    color: #fff;
+    margin-top: 30px;
+    border-radius: 8px;
 }
 
-.logo-imbativel{
-  width: 360px;
-  height: 2px;
+footer p {
+    margin: 0;
 }
 
-.informacoes a{
-  color: #ffffff;
-}
-.informacoes a:hover{
-  color: #b4b3b3;
+.contact-info {
+    font-weight: bold;
 }
 
-/* {
-    border: 1px solid red;
+.updated-date {
+    font-style: italic;
+    color: #888;
+}
+
+.content-section {
+    margin-bottom: 40px;
 }

@@ -1,192 +1,294 @@
+/* Reset básico */
 * {
-	margin: 0;
-	padding: 0;
-    font-family:"abel",sans-serif;
-}
-
-header {
-    background-color: #0c045c;
-    padding: 5px;
-}
-
-#servify-banner {
-    /*width: 200px;
-    padding-left: 50px;
-    padding-top: 10px;*/
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 10%;
-}
-
-#pesquisa-principal {
-    width: 250px;
-    height: 35px;
-    border-radius: 20px;
-    display: inline-block;
-    top: 30px;
-}
-
-#cadastro {
-    display: inline-block;
-    margin-left: 55%;
-}
-
-#banner {
-    background-color: black;
-    color: white;
-    padding: 100px;
-}
-
-#buttonCenter {
-    text-align: center;
-}
-
-.subtitulos {
-    color: rgb(249, 61, 255);
-    padding: 20px;
-}
-
-.main_colab {
-    display: flexbox;
-}
-
-.foto {  
-    border: 2px solid #0c045c;
-    width: 500px;
-    height: 250px;
-}
-
-#product {
-    height: auto;
-    width: 100%;
-    height: 100%;
-}
-
-main {
-    margin: 20px;
-    padding: 20px;
-}
-
-.precos {
-    border: 2px solid #0c045c;
-    height: 200px;
-    width: 500px;
-    position: absolute;
-    right: 100px;
-    top: 100px;
-    text-align: center;
-}
-
-.desc {
-    border: 2px solid #0c045c;
-    color: #000;
-    height: 300px;
-    width: 90%;
-    position: absolute;
-    top: 460px;
-
-}
-.contrante {
-    border: 2px solid #0c045c;
-    height: 300px;
-}
-
-hr {
-    color: #0c045c;
-}
-
-h1 {
-    color: #000;
-    text-align: center;
-    font-size: small;
-}
-h2 {
-    color: #000;
-    text-align: center;
-    font-size: xx-small;
-}
-/*Estilização do Carousel de fotos de usuários*/
-
-.pfp {
-    border-radius: 100%;
-    height: 100px;
-    width: 100px;
-}
-
-.perfil {
-    display: inline-block;
-}
-
-.faixa {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Fonte global */
+  body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #fefefe;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  
+  /* Animações */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Header */
+  header {
     display: flex;
-    justify-content: space-around;
-}
-
-h5 {
-    text-align: center;
-}
-
-.botaoRosa {
-    position: relative;
-    padding: 5px 12px;
-    border-radius: 6px;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    background-color: #7d2ae8;
-    transition: all 0.2s ease;
-    text-decoration: none;
-}
-.botaoRosa:hover {
-    background-color: #0056b3;
-}
-
-/*Footer*/
-
-footer{
-    margin-top: 80px;
-    background-color: black;
-    width: 100%;
-    height: auto;
-    float: left;
-    color: #ffffff;
-    font-size: 17px;
-    text-align: center;
     align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background: #0c045c;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    animation: fadeIn 1.2s ease-in;
+    flex-wrap: wrap;
+  }
+  
+  #servify-banner {
+    height: 50px;
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  #pesquisa-principal {
+    flex: 1;
+    margin: 10px 20px;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  #pesquisa-principal:focus {
+    border-color: #ff69b4;
+    box-shadow: 0 0 8px rgba(255, 105, 180, 0.3);
+    outline: none;
+  }
+  
+  #cadastro {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  /* Botão rosa com animação */
+  .botaoRosa {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .botaoRosa:hover {
+    background-color: #ff1493;
+    transform: scale(1.05);
+  }
+  
+  /* Main */
+  .main_colab {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    animation: fadeInUp 1.4s ease-out;
+  }
+  
+  .foto {
+    text-align: center;
+  }
+  
+  .foto h1 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #222;
+    animation: fadeInUp 1.5s ease-out;
+  }
+  
+  #product {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  #product:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Preços */
+  .precos {
+    background-color: #ffffff;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    max-width: 500px;
+    margin: 0 auto;
+    animation: fadeInUp 1.7s ease-out;
+  }
+  
+  .precos h2 {
+    margin-bottom: 10px;
+    color: #444;
+    text-align: center;
+  }
+  
+  .precos hr {
+    margin-bottom: 20px;
+  }
+  
+  .precos label {
+    font-size: 16px;
+    margin-left: 8px;
+    cursor: pointer;
+  }
+  
+  .precos input[type="radio"] {
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .precos .botaoRosa {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  
+  /* Descrição */
+  .desc {
+    background-color: #ffffff;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    text-align: justify;
+    animation: fadeInUp 2s ease-out;
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  
+  /* Scroll suave */
+  .desc::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .desc::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  .desc::-webkit-scrollbar-thumb {
+    background-color: #ff69b4;
+    border-radius: 4px;
+  }
+  
+  footer {
+    background-color: black;
+    padding: 40px 20px;
+    font-size: 14px;
+    color: white;
+    animation: fadeIn 2.2s ease-in;
+  }
+  
+  footer table {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  footer th, footer td {
+    text-align: left;
+    vertical-align: top;
+    padding: 10px;
+    font-size: 1.2rem;
   }
 
-table{
-  width: 100%;
-  padding: 0px 0px 0px 110px;
+  footer a {
+    color: white;
+    text-decoration: none;
+  }
+
+  footer a:hover {
+    color: #ff69b4;
+  }
   
-}
-table th{
-  font-size: 30px;
-  letter-spacing: 2px; /* Espaçamento de 2 pixels entre as letras */
-
-}
-table a{
-  color: #d4e7fa;
-  letter-spacing: 1px; /* Espaçamento de 2 pixels entre as letras */
-}
-table a:hover{
-  color: #d4d4d4;
-
-}
-
-.logo-imbativel{
-  width: 360px;
-  height: 2px;
-}
-
-.informacoes a{
-  color: #ffffff;
-}
-.informacoes a:hover{
-  color: #b4b3b3;
-}
-
-/* {
-    border: 1px solid red;
-}
+  .footer-secoes a {
+    display: block;
+    margin-bottom: 8px;
+    color: #444;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.2s;
+  }
+  
+  .footer-secoes a:hover {
+    color: #ff69b4;
+    transform: translateX(5px);
+  }
+  
+  .informacoes {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .informacoes a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #555;
+    transition: color 0.3s;
+  }
+  
+  .informacoes a:hover {
+    color: #ff69b4;
+  }
+  
+  /* Ícones redes sociais */
+  footer img {
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+      padding: 20px;
+    }
+  
+    #pesquisa-principal {
+      width: 100%;
+      margin: 0;
+    }
+  
+    #cadastro {
+      width: 100%;
+      justify-content: flex-start;
+    }
+  
+    .main_colab {
+      padding: 10px;
+    }
+  
+    .precos {
+      width: 100%;
+    }
+  
+    footer table {
+      display: block;
+    }
+  
+    footer th, footer td {
+      display: block;
+      width: 100%;
+    }
+  }
+  

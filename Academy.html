@@ -13,15 +13,20 @@
 </head>
 <body>
   <header>
-    <img src="servify.png" id="servify-banner">
-    <input type="text" id="pesquisa-principal">
-    <div id="cadastro">
-      <input type="button" value="Entrar" class="botaoRosa">
-      <input type="button" value="Criar conta" class="botaoRosa">
-    </div>
+      <img src="./img/servify.png" id="servify-banner" alt="Logo da empresa">
+      <input type="text" id="pesquisa-principal" placeholder="   Pesquise por um profissional">
+      <div id="cadastro">
+        <input type="button" value="Entrar" class="botaoRosa" onclick="location.href='./login.html';">
+        <input type="button" value="Criar conta" class="botaoRosa" onclick="location.href='./login.html';"> 
+      </div>
+  </header>
+
+    <div class="titulo">
+      <br>
         <h1>Academy - Servify</h1>
+        <br>
         <h2>Tudo que você precisa saber para usar o máximo do Servify!</h2>
-    </header>
+      </div>
     
     <div class="container">
         <div class="faq-section">
@@ -49,62 +54,62 @@
     </div>
 
     <footer> 
-        <table>
-        <br>   
-          <tr>    
-            <th class="logo-imbativel">
-              <img height="45" width="110"
-                src="./img/servify.con.png"
-                alt="Logo da empresa"
-                class="logo_termos_uso" />
-            </th> 
+      <table>
+      <br>   
+        <tr>    
+          <th class="logo-imbativel">
+            <img height="75" width="160"
+              src="./img/servify.png"
+              alt="Logo da empresa"
+              class="logo_termos_uso" />
+          </th> 
+        <div class="footer-secoes">
+          
+          <th class="comunidade"> Comunidade</th>
+    
+          <th class="sobre">Sobre</th>
+        </div>  
+    
+        </tr>
+    
+        <tr>
+          <td>Preço imbatível. Diversidade inigualável.<br>
+          <img src="img/facebook.png" alt="icone do facebook" style="width: 20px; height: 20px;">facebook
+          <img src="img/twitterX.png" alt="icone do twitter(X)"style="width: 30px; height: 30px;">twitter(X)
+          <img src="img/instagram.png" alt="icone do instagram" style="width: 25px; height: 25px;">instagram</td>
+          
+    
           <div class="footer-secoes">
-            
-            <th class="comunidade"> Comunidade</th>
+    
+            <td class="comunidade">
+              <a href="Blog.html">Blog</a><br>
+              <a href="Academy.html">Academy</a><br>
+              <a href="suporte.html">Suporte</a>
+            </td>
+    
+            <td class="sobre">
+              <a href="./Home.html">SerVify</a><br>
+              <a href="./Cadastro_de_Colaborador.html">Estamos Contratando!</a><br>
+              <a href="./patrocinio.html">Parceria</a>
+            </td>
+          </div>
+        </tr> 
+    
       
-            <th class="sobre">Sobre</th>
-          </div>  
+      </table><br>
+    
+       <div class="informacoes">
+        <p>CNPJ n.º 27.852.288/0001-89 - SERVIFY.COM Atividades de Internet LTDA.</p>
+        <p>
+            <a href="#">Mapa do site</a> | 
+            <a href="./termos_uso.html">Termos de uso</a> | 
+            <a href="./termos_uso.html">Política de privacidade</a> | 
+            <a href=".//Contatos.html">Contato</a> | 
+            <a href="#">Español</a>
+        </p>
+    </div>
       
-          </tr>
-      
-          <tr>
-            <td>Preço imbatível. Diversidade inigualável.<br>
-            <img src="img/facebook.png" alt="icone do facebook" style="width: 20px; height: 20px;">facebook
-            <img src="img/twitterX.png" alt="icone do twitter(X)"style="width: 30px; height: 30px;">twitter(X)
-            <img src="img/instagram.png" alt="icone do instagram" style="width: 25px; height: 25px;">instagram</td>
-            
-      
-            <div class="footer-secoes">
-      
-              <td class="comunidade">
-                <a href="Blog.html">Blog</a><br>
-                <a href="Academy.html">Academy</a><br>
-                <a href="suporte.html">Suporte</a>
-              </td>
-      
-              <td class="sobre">
-                <a href="#">SerVify</a><br>
-                <a href="#">Estamos Contratando!</a><br>
-                <a href="#">Parceria</a>
-              </td>
-            </div>
-          </tr> 
-      
-        
-        </table><br>
-      
-         <div class="informacoes">
-          <p>CNPJ n.º 27.852.288/0001-89 - SERVIFY.COM Atividades de Internet LTDA.</p>
-          <p>
-              <a href="#">Mapa do site</a> | 
-              <a href="termos_uso.html">Termos de uso</a> | 
-              <a href="#">Política de privacidade</a> | 
-              <a href="#">Contato</a> | 
-              <a href="#">Español</a>
-          </p>
-      </div>
-        
-      </footer>
+    </footer>
 
     <script>
         function toggleAnswer(element) {

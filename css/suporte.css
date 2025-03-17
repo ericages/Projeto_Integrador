@@ -1,113 +1,70 @@
-* {
-	margin: 0;
-	padding: 0;
-    font-family:"abel",sans-serif;
-}
-
-header {
-    background-color: #0c045c;
-    padding: 5px;
-}
-
-#servify-banner {
-    /*width: 200px;
-    padding-left: 50px;
-    padding-top: 10px;*/
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 10%;
-}
-
-#pesquisa-principal {
-    width: 250px;
-    height: 35px;
-    border-radius: 20px;
-    display: inline-flex;
-    top: 30px;
-}
-
-#cadastro {
-    display: inline-block;
-    margin-left: 55%;
-}
-
-#banner {
-    background-color: black;
-    color: white;
-    padding: 100px;
-}
-.botaoRosa {
-    position: relative;
-    padding: 5px 12px;
-    border-radius: 6px;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    background-color: #7d2ae8;
-    transition: all 0.2s ease;
-}
 body {
-    background: #f4f3f5;
+    margin: 0;
+    padding: 0;
+    font-family: 'abel', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
 .topo {
-    position: static;
-    display: block;
-    align-items: center;
-    height: 480px;
-    width: 100%;
-    background-color: #0C075E;
-    color: white;
+    background-color: #0c045c;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
 }
 
 .logo-topo {
-    display: flex;
-    float: left;
-    justify-content: center;
-    align-items: center;
-    padding-top: 20px;
-    padding-left: 50px;
-    height: 60px;
-    width: 140px;
+    width: 120px;
+    height: auto;
 }
 
-.text-topo {
-    position: static;
-    display: flex;
-    padding-top: 30px;
-    padding-left: 15px;
-    font-size: 10px;
+.text-topo h1 {
+    font-size: 32px;
+    margin: 10px 0;
+    color: white;
 }
 
-.topo .titulo {
-    position: static;
-    padding-left: 650px;
-    font-size: 50px;
-    padding-top: 30px;
+.titulo {
+    font-size: 24px;
+    margin-top: 20px;
+    color: white;
 }
 
 .form-pesquisa {
+    margin-top: 15px;
     display: flex;
     justify-content: center;
-    margin-top: 0;
+    gap: 10px;
 }
-input[type="text"] {
-   height: 50px;
-   width: 800px;
-   font-size: 20px;
-   border-radius: 20px;
-   padding: 5px;
+
+.form-pesquisa input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-pesquisa input[type="text"]:focus {
+    border-color: #007BFF;
 }
 
 .button-pesquisa {
-    height: 67px;
-    width: 150px;
-    border-radius: 15px;
-    font-size: 20px;
+    padding: 10px 20px;
     background-color: #FF0084;
     color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
+
+.button-pesquisa:hover {
+    background-color: #0056b3;
+}
+
 
 .bloco-informacao {
     display: flex;
@@ -134,12 +91,7 @@ div .bloco-artigo {
     border-radius: 20px;
 }
 
-.titulo {
-    position: fixed;
-    justify-content: center;
-    align-items: center;
-    padding-top: -500px;
-}
+
 
 .base {
     display: flex;
@@ -193,49 +145,106 @@ div .bloco-artigo {
     padding: 20px 35px;
     border-radius: 20px;
 }
-footer{
-    margin-top: 80px;
+
+footer {
     background-color: black;
+    padding: 40px 20px;
+    font-size: 14px;
+    color: white;
+    animation: fadeIn 2.2s ease-in;
+  }
+  
+  footer table {
     width: 100%;
-    height: auto;
-    float: left;
-    color: #ffffff;
-    font-size: 17px;
-    text-align: center;
-    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  footer th, footer td {
+    text-align: left;
+    vertical-align: top;
+    padding: 10px;
+    font-size: 1.2rem;
   }
 
-table{
-  width: 100%;
-  padding: 0px 0px 0px 110px;
+  footer a {
+    color: white;
+    text-decoration: none;
+  }
+
+  footer a:hover {
+    color: #ff69b4;
+  }
   
-}
-table th{
-  font-size: 30px;
-  letter-spacing: 2px; /* Espaçamento de 2 pixels entre as letras */
-
-}
-table a{
-  color: #d4e7fa;
-  letter-spacing: 1px; /* Espaçamento de 2 pixels entre as letras */
-}
-table a:hover{
-  color: #d4d4d4;
-
-}
-
-.logo-imbativel{
-  width: 360px;
-  height: 2px;
-}
-
-.informacoes a{
-  color: #ffffff;
-}
-.informacoes a:hover{
-  color: #b4b3b3;
-}
-
-/* {
-    border: 1px solid red;
-}
+  .footer-secoes a {
+    display: block;
+    margin-bottom: 8px;
+    color: #444;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.2s;
+  }
+  
+  .footer-secoes a:hover {
+    color: #ff69b4;
+    transform: translateX(5px);
+  }
+  
+  .informacoes {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .informacoes a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #555;
+    transition: color 0.3s;
+  }
+  
+  .informacoes a:hover {
+    color: #ff69b4;
+  }
+  
+  /* Ícones redes sociais */
+  footer img {
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+      padding: 20px;
+    }
+  
+    #pesquisa-principal {
+      width: 100%;
+      margin: 0;
+    }
+  
+    #cadastro {
+      width: 100%;
+      justify-content: flex-start;
+    }
+  
+    .main_colab {
+      padding: 10px;
+    }
+  
+    .precos {
+      width: 100%;
+    }
+  
+    footer table {
+      display: block;
+    }
+  
+    footer th, footer td {
+      display: block;
+      width: 100%;
+    }
+  }
+  

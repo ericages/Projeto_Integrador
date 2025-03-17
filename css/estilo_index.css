@@ -43,9 +43,10 @@ header {
 }
 
 .subtitulos {
-    color: rgb(249, 61, 255);
+    color: #FF0084;
+    font-weight: bold;
     padding: 20px;
-}
+} 
 
 .main_colab {
     display: flex;
@@ -113,64 +114,131 @@ h5 {
 
 .botaoRosa {
     position: relative;
-    padding: 5px 12px;
-    border-radius: 6px;
+    margin: 10px;
+    padding: 10px 15px;
+    border-radius: 13px;
     border: none;
     color: #fff;
     cursor: pointer;
-    background-color: #7d2ae8;
+    background-color: #FF0084;
+    font-size: 1.2rem;
+    font-weight: bold;
     transition: all 0.2s ease;
     text-decoration: none;
 }
+
 .botaoRosa:hover {
     background-color: #0056b3;
 }
 
-/*Footer*/
+/* Imagem da gallery */
 
-footer{
-    margin-top: 80px;
-    background-color: black;
+.card-img-top {
     width: 100%;
-    height: auto;
-    float: left;
-    color: #ffffff;
-    font-size: 17px;
-    text-align: center;
-    align-items: center;
+    height: 15vw;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+footer {
+    background-color: black;
+    padding: 40px 20px;
+    font-size: 14px;
+    color: white;
+    animation: fadeIn 2.2s ease-in;
+  }
+  
+  footer table {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  footer th, footer td {
+    text-align: left;
+    vertical-align: top;
+    padding: 10px;
+    font-size: 1.2rem;
   }
 
-table{
-  width: 100%;
-  padding: 0px 0px 0px 110px;
+  footer a {
+    color: white;
+    text-decoration: none;
+  }
+
+  footer a:hover {
+    color: #ff69b4;
+  }
   
-}
-table th{
-  font-size: 30px;
-  letter-spacing: 2px; /* Espaçamento de 2 pixels entre as letras */
-
-}
-table a{
-  color: #d4e7fa;
-  letter-spacing: 1px; /* Espaçamento de 2 pixels entre as letras */
-}
-table a:hover{
-  color: #d4d4d4;
-
-}
-
-.logo-imbativel{
-  width: 360px;
-  height: 2px;
-}
-
-.informacoes a{
-  color: #ffffff;
-}
-.informacoes a:hover{
-  color: #b4b3b3;
-}
-
-/* {
-    border: 1px solid red;
-}
+  .footer-secoes a {
+    display: block;
+    margin-bottom: 8px;
+    color: #444;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.2s;
+  }
+  
+  .footer-secoes a:hover {
+    color: #ff69b4;
+    transform: translateX(5px);
+  }
+  
+  .informacoes {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .informacoes a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #555;
+    transition: color 0.3s;
+  }
+  
+  .informacoes a:hover {
+    color: #ff69b4;
+  }
+  
+  /* Ícones redes sociais */
+  footer img {
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+      padding: 20px;
+    }
+  
+    #pesquisa-principal {
+      width: 100%;
+      margin: 0;
+    }
+  
+    #cadastro {
+      width: 100%;
+      justify-content: flex-start;
+    }
+  
+    .main_colab {
+      padding: 10px;
+    }
+  
+    .precos {
+      width: 100%;
+    }
+  
+    footer table {
+      display: block;
+    }
+  
+    footer th, footer td {
+      display: block;
+      width: 100%;
+    }
+  }
+  
