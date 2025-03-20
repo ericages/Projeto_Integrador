@@ -1,124 +1,127 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastre-se na SerVify</title>
-    <link rel="stylesheet" href="./css/cadastro.css">
-    <script src="./js/cadastro_colaborador.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastre-se na SerVify</title>
+  <link rel="stylesheet" href="./css/cadastro.css">
+  <script src="./js/cadastro_colaborador.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abel&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
-        <h1>Cadastro de Colaborador</h1>
-        <h2>Preencha seus dados corretamente e trabalhe conosco!</h2>
+  <h1>Cadastro de Colaborador</h1>
+  <h2>Preencha seus dados corretamente e trabalhe conosco!</h2>
 
-        <form id="formulario">
-          <label for="Nome">Nome Completo:*</label>
-          <input type="text" id="nome" name="nome">
-          <p id="nome-helper" class="helper-text" block> </p>
-  
-          <label for="email">E-mail:*</label>
-          <input type="email" id="email" name="email">
-          <p id="email-helper" class="helper-text"> </p>
-  
-          <label for="confirmaEmail">Confirmar E-mail:*</label>
-          <input type="email" id="confirmaEmail" name="confirmaEmail">
-          <p id="confirmaEmail-helper" class="helper-text"> </p>
-  
-          <label for="senha">Senha:*</label>
-          <input type="password" id="senha" name="senha">
-          <p id="senha-helper" class="helper-text"> </p>
-  
-          <label for="confirma-senha">Confirmar senha:*</label>
-          <input type="password" id="confirma-senha" name="confirma-senha">
-          <p id="confirma-senha-helper" class="helper-text"> </p>
-  
-          <label for="celular">Celular:*</label>
-          <input type="text" id="celular" name="celular">
-          <p id="erroCelular" class="helper-text"> </p>
-  
-          <label for="cpf">CPF:*</label>
-          <input type="text" id="cpf" name="cpf" required>
-          <p id="erroCpf" class="helper-text"> </p>
-  
-          <label for="dataNascimento">Data de Nascimento:</label>
-          <input type="date" id="dataNascimento" required>
-          <p id="erroData" class="visible"></p>
-        
-          <label for="endereço">Endereço:*</label>
-          <input type="text" id="endereco" name="endereco">
-          <p id="erroEndereço" class="helper-text"> </p>
-  
-          <label for="cep">CEP:*</label>
-          <input type="text" id="cep" name="cep" required>
-          <p id="erroCep" class="helper-text"> </p>
+  <form id="formulario">
+    <label for="Nome">Nome Completo:*</label>
+    <input type="text" id="nome" name="nome">
+    <p id="nome-helper" class="helper-text" block> </p>
+
+    <label for="email">E-mail:*</label>
+    <input type="email" id="email" name="email">
+    <p id="email-helper" class="helper-text"> </p>
+
+    <label for="confirmaEmail">Confirmar E-mail:*</label>
+    <input type="email" id="confirmaEmail" name="confirmaEmail">
+    <p id="confirmaEmail-helper" class="helper-text"> </p>
+
+    <label for="senha">Senha:*</label>
+    <input type="password" id="senha" name="senha">
+    <p id="senha-helper" class="helper-text"> </p>
+
+    <label for="confirma-senha">Confirmar senha:*</label>
+    <input type="password" id="confirma-senha" name="confirma-senha">
+    <p id="confirma-senha-helper" class="helper-text"> </p>
+
+    <label for="celular">Celular:*</label>
+    <input type="text" id="celular" name="celular">
+    <p id="erroCelular" class="helper-text"> </p>
+
+    <label for="cpf">CPF:*</label>
+    <input type="text" id="cpf" name="cpf" required>
+    <p id="erroCpf" class="helper-text"> </p>
+
+    <label for="dataNascimento">Data de Nascimento:</label>
+    <input type="date" id="dataNascimento" required>
+    <p id="erroData" class="visible"></p>
+
+    <label for="endereço">Endereço:*</label>
+    <input type="text" id="endereco" name="endereco">
+    <p id="erroEndereço" class="helper-text"> </p>
+
+    <label for="cep">CEP:*</label>
+    <input type="text" id="cep" name="cep" required>
+    <p id="erroCep" class="helper-text"> </p>
+    </div>
+    <div class="aviso">
+      <p> Os campos com '*' são obrigatórios. </p>
+
+      <button type="submit">Enviar</button>
+    </div>
+  </form>
+
+  <footer>
+    <table>
+      <br>
+      <tr>
+        <th class="logo-imbativel">
+          <img height="75" width="160" src="./img/servify.png" alt="Logo da empresa" class="logo_termos_uso" />
+        </th>
+        <div class="footer-secoes">
+
+          <th class="comunidade"> Comunidade</th>
+
+          <th class="sobre">Sobre</th>
         </div>
-          <div class="aviso">
-          <p> Os campos com '*' são obrigatórios. </p>
-  
-          <button type="submit">Enviar</button>
-          </div>
-      </form>
 
-      <footer> 
-        <table>
-        <br>   
-          <tr>    
-            <th class="logo-imbativel">
-              <img height="75" width="160"
-                src="./img/servify.png"
-                alt="Logo da empresa"
-                class="logo_termos_uso" />
-            </th> 
-          <div class="footer-secoes">
-            
-            <th class="comunidade"> Comunidade</th>
-      
-            <th class="sobre">Sobre</th>
-          </div>  
-      
-          </tr>
-      
-          <tr>
-            <td>Preço imbatível. Diversidade inigualável.<br>
-            <img src="img/facebook.png" alt="icone do facebook" style="width: 20px; height: 20px;">facebook
-            <img src="img/twitterX.png" alt="icone do twitter(X)"style="width: 30px; height: 30px;">twitter(X)
-            <img src="img/instagram.png" alt="icone do instagram" style="width: 25px; height: 25px;">instagram</td>
-            
-      
-            <div class="footer-secoes">
-      
-              <td class="comunidade">
-                <a href="Blog.html">Blog</a><br>
-                <a href="Academy.html">Academy</a><br>
-                <a href="suporte.html">Suporte</a>
-              </td>
-      
-              <td class="sobre">
-                <a href="./Home.html">SerVify</a><br>
-                <a href="./Cadastro_de_Colaborador.html">Estamos Contratando!</a><br>
-                <a href="./patrocinio.html">Parceria</a>
-              </td>
-            </div>
-          </tr> 
-      
-        
-        </table><br>
-      
-         <div class="informacoes">
-          <p>CNPJ n.º 27.852.288/0001-89 - SERVIFY.COM Atividades de Internet LTDA.</p>
-          <p>
-              <a href="#">Mapa do site</a> | 
-              <a href="./termos_uso.html">Termos de uso</a> | 
-              <a href="./termos_uso.html">Política de privacidade</a> | 
-              <a href=".//Contatos.html">Contato</a> | 
-              <a href="#">Español</a>
-          </p>
-      </div>
-        
-      </footer>
+      </tr>
+
+      <tr>
+        <td>Preço imbatível. Diversidade inigualável.<br>
+          <img src="img/facebook.png" alt="icone do facebook" style="width: 20px; height: 20px;">facebook
+          <img src="img/twitterX.png" alt="icone do twitter(X)" style="width: 30px; height: 30px;">twitter(X)
+          <img src="img/instagram.png" alt="icone do instagram" style="width: 25px; height: 25px;">instagram
+        </td>
+
+
+        <div class="footer-secoes">
+
+          <td class="comunidade">
+            <a href="Blog.html">Blog</a><br>
+            <a href="Academy.html">Academy</a><br>
+            <a href="suporte.html">Suporte</a>
+          </td>
+
+          <td class="sobre">
+            <a href="./Home.html">SerVify</a><br>
+            <a href="./Cadastro_de_Colaborador.html">Estamos Contratando!</a><br>
+            <a href="./patrocinio.html">Parceria</a>
+          </td>
+        </div>
+      </tr>
+
+
+    </table><br>
+
+    <div class="informacoes">
+      <p>CNPJ n.º 27.852.288/0001-89 - SERVIFY.COM Atividades de Internet LTDA.</p>
+      <p>
+        <a href="#">Mapa do site</a> |
+        <a href="./termos_uso.html">Termos de uso</a> |
+        <a href="./termos_uso.html">Política de privacidade</a> |
+        <a href=".//Contatos.html">Contato</a> |
+        <a href="#">Español</a>
+      </p>
+    </div>
+
+  </footer>
 </body>
+
 </html>

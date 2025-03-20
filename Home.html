@@ -1,208 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/estilo_index.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title>Home - Servify</title>
-    <!--Fonte que eu peguei da página de login, obrigado quem fez :)-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/estilo_index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <title>Home - Servify</title>
+  <!--Fonte que eu peguei da página de login, obrigado quem fez :)-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abel&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <img src="./img/servify.png" id="servify-banner" alt="Logo da empresa">
-        <input type="text" id="pesquisa-principal" placeholder="   Pesquise por um profissional">
-        <div id="cadastro">
-          <input type="button" value="Entrar" class="botaoRosa" onclick="location.href='./login.html';">
-          <input type="button" value="Criar conta" class="botaoRosa" onclick="location.href='./login.html';"> 
+  <header>
+    <div class="navBar">
+      <div class="navBar-logo">
+        <img src="./img/servify.png" id="servify-banner" alt="Logo da empresa" src="./js/input_navBar.js">
+        <input type="text" id="pesquisa-principal" placeholder="  Buscar">
+        <div class="navBar-links">
+          <a href="./Home.html">Home</a>
+          <a href="./Blog.html">Blog</a>
+          <a href="./Contatos.html">Contato</a>
+          <a href="./sobre.html">Sobre</a>
         </div>
-    </header>
-    <div id="banner">
-        <h2>Escolha o profissional ideal para solucionar seu problema.</h2>
-        <div id="buttonCenter">
-        <input type="button" value="Seja um colaborador" class="botaoRosa" onclick="location.href='./cadastro_de_colaborador.html';">
-        <input type="button" value="Contrate um colaborador" class="botaoRosa" onclick="location.href='./cadastro_de_colaborador.html';">
+        <div class="navBar-botao">
+          <input type="button" value="Entrar" class="botao_entra" onclick="location.href='./login.html';">
+          <input type="button" value="Criar conta" class="botao_criarConta" onclick="location.href='./login.html';">
         </div>
-        <!--banner com a escrita e 2 butão,por enquanto deixar preto-->
+      </div>
+    </div>
+  </header>
+  <div id="banner">
+    <h2>Escolha o profissional ideal para solucionar seu problema.</h2>
+    <div id="buttonCenter">
+      <input type="button" value="Seja um colaborador" class="botaoRosa"
+        onclick="location.href='./cadastro_de_colaborador.html';">
+      <input type="button" value="Contrate um colaborador" class="botaoRosa"
+        onclick="location.href='./cadastro_de_colaborador.html';">
+    </div>
+    <!--banner com a escrita e 2 butão,por enquanto deixar preto-->
+  </div>
+
+  <main>
+    <h2 class="subtitulos">Os profissionais com a melhor avaliação</h2><!--perfis-->
+    <div class="faixa">
+
+      <div class="perfil">
+        <img src="img-pessoas/pessoa1.jpg" alt="perfil" class="pfp">
+        <h5>Antônio</h4>
+      </div> <!--usar o inline para tentar fazer direitinho?-->
+
+      <div class="perfil">
+        <img src="img-pessoas/pessoa2.jfif" alt="perfil" class="pfp">
+        <h5>Antônio</h4>
+      </div>
+
+      <div class="perfil">
+        <img src="img-pessoas/pessoa4.jfif" alt="perfil" class="pfp">
+        <h5>Antônio</h4>
+      </div>
+
+      <div class="perfil">
+        <img src="img-pessoas/pessoa5.jfif" alt="perfil" class="pfp">
+        <h5>Antônio</h4>
+      </div>
+
+      <div class="perfil">
+        <img src="img-pessoas/pessoa6.jfif" alt="perfil" class="pfp">
+        <h5>Antônio</h4>
+      </div>
+
+      <div class="perfil">
+        <img src="img-pessoas/pessoa7.jfif" alt="perfil" class="pfp">
+        <h5>Antônio</h4>
+      </div>
+
     </div>
 
-    <main>
-        <h2 class="subtitulos">Os profissionais com a melhor avaliação</h2><!--perfis-->
-        <div class="faixa">
-
-          <div class="perfil">
-            <img src="img-pessoas/pessoa1.jpg" alt="perfil" class="pfp">
-            <h5>Antônio</h4>
-          </div> <!--usar o inline para tentar fazer direitinho?-->
-
-          <div class="perfil">
-            <img src="img-pessoas/pessoa2.jfif" alt="perfil" class="pfp">
-            <h5>Antônio</h4>
-          </div>
-
-          <div class="perfil">
-            <img src="img-pessoas/pessoa4.jfif" alt="perfil" class="pfp">
-            <h5>Antônio</h4>
-          </div>
-
-          <div class="perfil">
-            <img src="img-pessoas/pessoa5.jfif" alt="perfil" class="pfp">
-            <h5>Antônio</h4>
-          </div>
-
-          <div class="perfil">
-            <img src="img-pessoas/pessoa6.jfif" alt="perfil" class="pfp">
-            <h5>Antônio</h4>
-          </div>
-
-          <div class="perfil">
-            <img src="img-pessoas/pessoa7.jfif" alt="perfil" class="pfp">
-            <h5>Antônio</h4>
-          </div>
-
-        </div>
-
-        <h2 class="subtitulos">Colaboradores</h2><!--usar flexbox para os perfils e colaboradores
+    <h2 class="subtitulos">Colaboradores</h2><!--usar flexbox para os perfils e colaboradores
         Peguei o código emprestado de https://codepen.io/maryj25/pen/axBNVO-->
 
-        <section id="gallery">
-            <div class="container">
-              <div class="row">
-              <div class="col-lg-4 mb-4">
-              <div class="card">
-                <img src="./img-home/produto vender.webp" alt="produto vender" class="card-img-top" onclick="location.href='./pag_serviço.html';">
-                <div class="card-body">
-                  <h5 class="card-title">Eu vou fazer seu produto vender todo dia</h5>
-                  <p class="card-text">Nós criamos campanhas estratégicas no Google, Facebook, Instagram e TikTok para atrair clientes ideais para o seu produto ou serviço. Com anúncios altamente segmentados e otimizados, garantimos os resultados.</p>
-                 <a href="./pag_serviço.html" class="btn btn-outline-success btn-sm">Comprar Agora</a>
-                </div>
-               </div>
-              </div>
-            <div class="col-lg-4 mb-4">
+    <section id="gallery">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-4">
             <div class="card">
-                <img src="./img-home/Landing-Page.png" alt="Landing Page" class="card-img-top" onclick="location.href='./pag_serviço.html';">
-                <div class="card-body">
-                  <h5 class="card-title">Eu vou Criar Sua Landing Page de Alta Conversão</h5>
-                  <p class="card-text">Sabemos da importância de uma página de venda profissional e eficaz, é por isso que estou aqui!
-                    Se destaque no mercado com páginas de vendas que tenha uma boa performance e transforme Leads em clientes!</p>
-                 <a href="./pag_serviço.html" class="btn btn-outline-success btn-sm">Comprar Agora</a>
-                </div>
-                </div>
-              </div>
-              <div class="col-lg-4 mb-4">
-              <div class="card">
-                <img src="./img-home/post-profissional.png" alt="post profissional" class="card-img-top" onclick="location.href='./pag_serviço.html';">
-                <div class="card-body">
-                  <h5 class="card-title">Eu vou criar um post profissional para sua empresa</h5>
-                  <p class="card-text">Sou designer gráfico especializado em mídias sociais e crio posts atrativos e personalizados para Instagram, Facebook e outras redes sociais.
-                    Entrega rápida e de alta qualidade</p>
-                 <a href="./pag_serviço.html" class="btn btn-outline-success btn-sm">Comprar Agora</a>
-                </div>
-               </div>
+              <img src="./img-home/produto vender.webp" alt="produto vender" class="card-img-top"
+                onclick="location.href='./pag_serviço.html';">
+              <div class="card-body">
+                <h5 class="card-title">Eu vou fazer seu produto vender todo dia</h5>
+                <p class="card-text">Nós criamos campanhas estratégicas no Google, Facebook, Instagram e TikTok para
+                  atrair clientes ideais para o seu produto ou serviço. Com anúncios altamente segmentados e otimizados,
+                  garantimos os resultados.</p>
+                <a href="./pag_serviço.html" class="btn btn-outline-success btn-sm">Comprar Agora</a>
               </div>
             </div>
           </div>
-          </section>
-
-          <section id="gallery">
-            <div class="container">
-              <div class="row">
-              <div class="col-lg-4 mb-4">
-              <div class="card">
-                <img src="./img-home/currículo.jpg" alt="currículo " class="card-img-top" onclick="location.href='./pag_serviço.html';">
-                <div class="card-body">
-                  <h5 class="card-title">Eu vou fazer um currículo profissional pra você</h5>
-                  <p class="card-text">Trabalhamos com a elaboração de currículos profissionais para nossos clientes. Prezamos a qualidade em disponibilizar um currículo profissional que ajude o cliente no processo de busca de colocação profissional.</p>
-                 <a href="./pag_serviço.html" class="btn btn-outline-success btn-sm">Compar Agora</a>
-                </div>
-               </div>
-              </div>
-            <div class="col-lg-4 mb-4">
+          <div class="col-lg-4 mb-4">
             <div class="card">
-                <img src="./img-home/codigo.jpeg" alt="Codigo" class="card-img-top" onclick="location.href='./pag_serviço.html';">
-                <div class="card-body">
-                  <h5 class="card-title">Eu vou Criar ou revisar seu código em Java.</h5>
-                  <p class="card-text">Vou criar aplicações de acordo com a sua necessidade ou revisar seu código e aplicar correções. Posso revisar ou fazer trabalhos de faculdade. Entre em contato e vamos acertar todos os detalhes.</p>
-                 <a href="./pag_serviço.html" class="btn btn-outline-success btn-sm">Comprar Agora</a>
-                </div>
-                </div>
-              </div>
-              <div class="col-lg-4 mb-4">
-              <div class="card">
-                <img src="./img-home/marca.png" alt="Marca" class="card-img-top" onclick="location.href='./pag_serviço.html';">
-                <div class="card-body">
-                  <h5 class="card-title">Eu vou Registrar a sua Marca em 24h</h5>
-                  <p class="card-text">Olá, sou uma advogada especializada em propriedade intelectual com anos de experiência em Registro de Marcas e Patentes. Entendo a importância de proteger a identidade do seu negócio.</p>
-                 <a href="./pag_serviço.html" class="btn btn-outline-success btn-sm">Comprar Agora</a>
-                </div>
-               </div>
+              <img src="./img-home/Landing-Page.png" alt="Landing Page" class="card-img-top"
+                onclick="location.href='./pag_serviço.html';">
+              <div class="card-body">
+                <h5 class="card-title">Eu vou Criar Sua Landing Page de Alta Conversão</h5>
+                <p class="card-text">Sabemos da importância de uma página de venda profissional e eficaz, é por isso que
+                  estou aqui!
+                  Se destaque no mercado com páginas de vendas que tenha uma boa performance e transforme Leads em
+                  clientes!</p>
+                <a href="./pag_serviço.html" class="btn btn-outline-success btn-sm">Comprar Agora</a>
               </div>
             </div>
           </div>
-          </section>
-        
-    </main>
+          <div class="col-lg-4 mb-4">
+            <div class="card">
+              <img src="./img-home/post-profissional.png" alt="post profissional" class="card-img-top"
+                onclick="location.href='./pag_serviço.html';">
+              <div class="card-body">
+                <h5 class="card-title">Eu vou criar um post profissional para sua empresa</h5>
+                <p class="card-text">Sou designer gráfico especializado em mídias sociais e crio posts atrativos e
+                  personalizados para Instagram, Facebook e outras redes sociais.
+                  Entrega rápida e de alta qualidade</p>
+                <a href="./pag_serviço.html" class="btn btn-outline-success btn-sm">Comprar Agora</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <footer> 
-      <table>
-      <br>   
-        <tr>    
-          <th class="logo-imbativel">
-            <img height="75" width="160"
-              src="./img/servify.png"
-              alt="Logo da empresa"
-              class="logo_termos_uso" />
-          </th> 
+    <section id="gallery">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-4">
+            <div class="card">
+              <img src="./img-home/currículo.jpg" alt="currículo " class="card-img-top"
+                onclick="location.href='./pag_serviço.html';">
+              <div class="card-body">
+                <h5 class="card-title">Eu vou fazer um currículo profissional pra você</h5>
+                <p class="card-text">Trabalhamos com a elaboração de currículos profissionais para nossos clientes.
+                  Prezamos a qualidade em disponibilizar um currículo profissional que ajude o cliente no processo de
+                  busca de colocação profissional.</p>
+                <a href="./pag_serviço.html" class="btn btn-outline-success btn-sm">Compar Agora</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <div class="card">
+              <img src="./img-home/codigo.jpeg" alt="Codigo" class="card-img-top"
+                onclick="location.href='./pag_serviço.html';">
+              <div class="card-body">
+                <h5 class="card-title">Eu vou Criar ou revisar seu código em Java.</h5>
+                <p class="card-text">Vou criar aplicações de acordo com a sua necessidade ou revisar seu código e
+                  aplicar correções. Posso revisar ou fazer trabalhos de faculdade. Entre em contato e vamos acertar
+                  todos os detalhes.</p>
+                <a href="./pag_serviço.html" class="btn btn-outline-success btn-sm">Comprar Agora</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <div class="card">
+              <img src="./img-home/marca.png" alt="Marca" class="card-img-top"
+                onclick="location.href='./pag_serviço.html';">
+              <div class="card-body">
+                <h5 class="card-title">Eu vou Registrar a sua Marca em 24h</h5>
+                <p class="card-text">Olá, sou uma advogada especializada em propriedade intelectual com anos de
+                  experiência em Registro de Marcas e Patentes. Entendo a importância de proteger a identidade do seu
+                  negócio.</p>
+                <a href="./pag_serviço.html" class="btn btn-outline-success btn-sm">Comprar Agora</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <table>
+      <br>
+      <tr>
+        <th class="logo-imbativel">
+          <img height="75" width="160" src="./img/servify.png" alt="Logo da empresa" class="logo_termos_uso" />
+        </th>
         <div class="footer-secoes">
-          
+
           <th class="comunidade"> Comunidade</th>
-    
+
           <th class="sobre">Sobre</th>
-        </div>  
-    
-        </tr>
-    
-        <tr>
-          <td>Preço imbatível. Diversidade inigualável.<br>
+        </div>
+
+      </tr>
+
+      <tr>
+        <td>Preço imbatível. Diversidade inigualável.<br>
           <img src="img/facebook.png" alt="icone do facebook" style="width: 20px; height: 20px;">facebook
-          <img src="img/twitterX.png" alt="icone do twitter(X)"style="width: 30px; height: 30px;">twitter(X)
-          <img src="img/instagram.png" alt="icone do instagram" style="width: 25px; height: 25px;">instagram</td>
-          
-    
-          <div class="footer-secoes">
-    
-            <td class="comunidade">
-              <a href="Blog.html">Blog</a><br>
-              <a href="Academy.html">Academy</a><br>
-              <a href="suporte.html">Suporte</a>
-            </td>
-    
-            <td class="sobre">
-              <a href="./Home.html">SerVify</a><br>
-              <a href="./Cadastro_de_Colaborador.html">Estamos Contratando!</a><br>
-              <a href="./patrocinio.html">Parceria</a>
-            </td>
-          </div>
-        </tr> 
-    
-      
-      </table><br>
-    
-       <div class="informacoes">
-        <p>CNPJ n.º 27.852.288/0001-89 - SERVIFY.COM Atividades de Internet LTDA.</p>
-        <p>
-            <a href="#">Mapa do site</a> | 
-            <a href="./termos_uso.html">Termos de uso</a> | 
-            <a href="./termos_uso.html">Política de privacidade</a> | 
-            <a href=".//Contatos.html">Contato</a> | 
-            <a href="#">Español</a>
-        </p>
+          <img src="img/twitterX.png" alt="icone do twitter(X)" style="width: 30px; height: 30px;">twitter(X)
+          <img src="img/instagram.png" alt="icone do instagram" style="width: 25px; height: 25px;">instagram
+        </td>
+
+
+        <div class="footer-secoes">
+
+          <td class="comunidade">
+            <a href="Blog.html">Blog</a><br>
+            <a href="Academy.html">Academy</a><br>
+            <a href="suporte.html">Suporte</a>
+          </td>
+
+          <td class="sobre">
+            <a href="./Home.html">SerVify</a><br>
+            <a href="./Cadastro_de_Colaborador.html">Estamos Contratando!</a><br>
+            <a href="./patrocinio.html">Parceria</a>
+          </td>
+        </div>
+      </tr>
+
+
+    </table><br>
+
+    <div class="informacoes">
+      <p>CNPJ n.º 27.852.288/0001-89 - SERVIFY.COM Atividades de Internet LTDA.</p>
+      <p>
+        <a href="#">Mapa do site</a> |
+        <a href="./termos_uso.html">Termos de uso</a> |
+        <a href="./termos_uso.html">Política de privacidade</a> |
+        <a href=".//Contatos.html">Contato</a> |
+        <a href="#">Español</a>
+      </p>
     </div>
-      
-    </footer>
-    </body>
+
+  </footer>
+</body>
+
 </html>

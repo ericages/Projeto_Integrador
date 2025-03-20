@@ -5,31 +5,87 @@
 }
 
 header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     background-color: #0c045c;
-    padding: 5px;
 }
 
+.navBar-logo  {
+    display: flex;
+}
+
+.navBar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 30px;
+}
+
+.navBar-links {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.navBar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.navBar-links a:hover {
+  color: #FF0084;
+  transition: all 0.1s ease;
+}
+
+.navBar-botao {
+    display: flex;
+    align-items: center;
+    padding-left: auto;
+    gap: 20px;
+}
+
+.botao_entra,
+.botao_criarConta {
+    background-color: #FF0084;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.botao_entra:hover,
+.botao_criarConta:hover {
+    background-color: #0056b3;
+}
 #servify-banner {
-    /*width: 200px;
-    padding-left: 50px;
-    padding-top: 10px;*/
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 10%;
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  width: 10%;
+}
+
+#servify-banner img {
+  align-items: center;
+  width: 100px;
+  height: 100px;
 }
 
 #pesquisa-principal {
-    width: 250px;
-    height: 35px;
-    border-radius: 20px;
-    display: inline-block;
-    top: 30px;
-}
-
-#cadastro {
-    display: inline-block;
-    margin-left: 55%;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  height: 38px;
+  width: 360px;
+  border-radius: 15px;
 }
 
 #banner {
@@ -206,6 +262,42 @@ footer {
   }
   
   /* Responsivo */
+  @media (max-width: 820px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+      padding: 20px;
+    }
+    .navBar-links {
+      display: none;
+    }
+  
+    .navBar-botao {
+      display: flex;
+      align-items: center;
+      padding-left: auto;
+      gap: 20px;
+    }
+  
+    #pesquisa-principal {
+      align-items: center;
+      width: 100%;
+      margin: 0;
+    }
+  
+    #cadastro {
+      width: 100%;
+      justify-content: flex-start;
+    }
+  
+    .faixa {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
   @media (max-width: 768px) {
     header {
       flex-direction: column;
@@ -241,4 +333,5 @@ footer {
       width: 100%;
     }
   }
+
   

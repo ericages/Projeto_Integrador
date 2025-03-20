@@ -1,119 +1,140 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Suporte</title>
-        <link rel="stylesheet" href="./css/suporte.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-    </head>
-    <body>
-        <div class="topo">
-            <a href="#" class="t-topo"><img src="./logo.png" alt="logo" class="logo-topo"></a>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suporte</title>
+  <link rel="stylesheet" href="./css/suporte.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abel&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
-            <div class="text-topo">
-                <h1>Central de Ajuda</h1>
-            </div>
+</head>
 
-            <h1 class="titulo">Olá, como podemos te ajudar?</h1>
-                <form action="pesquisa" method="get" class="form-pesquisa">
-                    <input type="text" nome"pesquisa" placeholder="Digitar o termo de pesquisa aqui...">
-                    <button type="button" class="button-pesquisa">Pesquisar</button>
-                </form> 
+<body>
+  <header>
+    <div class="navBar">
+      <div class="navBar-logo">
+        <img src="./img/servify.png" id="servify-banner" alt="Logo da empresa" src="./js/input_navBar.js">
+        <input type="text" id="pesquisa-principal" placeholder="  Buscar">
+        <div class="navBar-links">
+          <a href="./Home.html">Home</a>
+          <a href="./Blog.html">Blog</a>
+          <a href="./Contatos.html">Contato</a>
+          <a href="./sobre.html">Sobre</a>
         </div>
-        <div class="bloco-informacao">
-            <div class="bloco-artigo">
-                    <h3>Procurar artigos</h3>
-                    <p>Explore as instruções e<br>conheça as melhores<br>práticas.</p> 
-             </div>
-            <div class="bloco-ticket">
-                <h3>Enviar um ticket</h3>
-                <p>Descreva seu problemas<br>preenchendo o<br>formulário do ticket</p>
-            </div>
+        <div class="navBar-botao">
+          <input type="button" value="Entrar" class="botao_entra" onclick="location.href='./login.html';">
+          <input type="button" value="Criar conta" class="botao_criarConta" onclick="location.href='./login.html';">
         </div>
-        <h1 class="base-titulo">Base de conhecimento</h1>
-        <div class="base">
-            <div class="base-passos">
-                <img src="./camada.png" alt="imagem">
-                <h3>Primeiros passos</h3>
-                <p>Tudo que você precisa saber<br>para começar na SerVify.</p>
-            </div>
-            <div class="base-comprando">
-                <img src="./camada.png" alt="imagem">
-                <h3>Comprando na SerVify</h3>
-                <p>Guia para compradores,<br>incluindo como realizar.</p>
-            </div>
-            <div class="base-vendendo">
-                <img src="./camada.png" alt="Imagem">
-                <h3>Vendendo no SerVify</h3>
-                <p>Recursos essenciais para<br>vendedores.</p>
-            </div>
-            <div class="base-suporte">
-                <img src="./camada.png" alt="Imagem">
-                <h3>Suporte e Segurança</h3>
-                <p>Informações importante sobre<br>segurança na plataforma.</p>
-            </div>
+      </div>
+    </div>
+  </header>
+  <div class="topo">
+    <a href="#" class="t-topo"><img src="./logo.png" alt="logo" class="logo-topo"></a>
+
+    <div class="text-topo">
+      <h1>Central de Ajuda</h1>
+    </div>
+
+    <h1 class="titulo">Olá, como podemos te ajudar?</h1>
+    <form action="pesquisa" method="get" class="form-pesquisa">
+      <input type="text" nome"pesquisa" placeholder="Digitar o termo de pesquisa aqui...">
+      <button type="button" class="button-pesquisa">Pesquisar</button>
+    </form>
+  </div>
+  <div class="bloco-informacao">
+    <div class="bloco-artigo">
+      <h3>Procurar artigos</h3>
+      <p>Explore as instruções e<br>conheça as melhores<br>práticas.</p>
+    </div>
+    <div class="bloco-ticket">
+      <h3>Enviar um ticket</h3>
+      <p>Descreva seu problemas<br>preenchendo o<br>formulário do ticket</p>
+    </div>
+  </div>
+  <h1 class="base-titulo">Base de conhecimento</h1>
+  <div class="base">
+    <div class="base-passos">
+      <img src="./camada.png" alt="imagem">
+      <h3>Primeiros passos</h3>
+      <p>Tudo que você precisa saber<br>para começar na SerVify.</p>
+    </div>
+    <div class="base-comprando">
+      <img src="./camada.png" alt="imagem">
+      <h3>Comprando na SerVify</h3>
+      <p>Guia para compradores,<br>incluindo como realizar.</p>
+    </div>
+    <div class="base-vendendo">
+      <img src="./camada.png" alt="Imagem">
+      <h3>Vendendo no SerVify</h3>
+      <p>Recursos essenciais para<br>vendedores.</p>
+    </div>
+    <div class="base-suporte">
+      <img src="./camada.png" alt="Imagem">
+      <h3>Suporte e Segurança</h3>
+      <p>Informações importante sobre<br>segurança na plataforma.</p>
+    </div>
+  </div>
+  <footer>
+    <table>
+      <br>
+      <tr>
+        <th class="logo-imbativel">
+          <img height="75" width="160" src="./img/servify.png" alt="Logo da empresa" class="logo_termos_uso" />
+        </th>
+        <div class="footer-secoes">
+
+          <th class="comunidade"> Comunidade</th>
+
+          <th class="sobre">Sobre</th>
         </div>
-        <footer> 
-          <table>
-          <br>   
-            <tr>    
-              <th class="logo-imbativel">
-                <img height="75" width="160"
-                  src="./img/servify.png"
-                  alt="Logo da empresa"
-                  class="logo_termos_uso" />
-              </th> 
-            <div class="footer-secoes">
-              
-              <th class="comunidade"> Comunidade</th>
-        
-              <th class="sobre">Sobre</th>
-            </div>  
-        
-            </tr>
-        
-            <tr>
-              <td>Preço imbatível. Diversidade inigualável.<br>
-              <img src="img/facebook.png" alt="icone do facebook" style="width: 20px; height: 20px;">facebook
-              <img src="img/twitterX.png" alt="icone do twitter(X)"style="width: 30px; height: 30px;">twitter(X)
-              <img src="img/instagram.png" alt="icone do instagram" style="width: 25px; height: 25px;">instagram</td>
-              
-        
-              <div class="footer-secoes">
-        
-                <td class="comunidade">
-                  <a href="Blog.html">Blog</a><br>
-                  <a href="Academy.html">Academy</a><br>
-                  <a href="suporte.html">Suporte</a>
-                </td>
-        
-                <td class="sobre">
-                  <a href="./Home.html">SerVify</a><br>
-                  <a href="./Cadastro_de_Colaborador.html">Estamos Contratando!</a><br>
-                  <a href="./patrocinio.html">Parceria</a>
-                </td>
-              </div>
-            </tr> 
-        
-          
-          </table><br>
-        
-           <div class="informacoes">
-            <p>CNPJ n.º 27.852.288/0001-89 - SERVIFY.COM Atividades de Internet LTDA.</p>
-            <p>
-                <a href="#">Mapa do site</a> | 
-                <a href="./termos_uso.html">Termos de uso</a> | 
-                <a href="./termos_uso.html">Política de privacidade</a> | 
-                <a href=".//Contatos.html">Contato</a> | 
-                <a href="#">Español</a>
-            </p>
+
+      </tr>
+
+      <tr>
+        <td>Preço imbatível. Diversidade inigualável.<br>
+          <img src="img/facebook.png" alt="icone do facebook" style="width: 20px; height: 20px;">facebook
+          <img src="img/twitterX.png" alt="icone do twitter(X)" style="width: 30px; height: 30px;">twitter(X)
+          <img src="img/instagram.png" alt="icone do instagram" style="width: 25px; height: 25px;">instagram
+        </td>
+
+
+        <div class="footer-secoes">
+
+          <td class="comunidade">
+            <a href="Blog.html">Blog</a><br>
+            <a href="Academy.html">Academy</a><br>
+            <a href="suporte.html">Suporte</a>
+          </td>
+
+          <td class="sobre">
+            <a href="./Home.html">SerVify</a><br>
+            <a href="./Cadastro_de_Colaborador.html">Estamos Contratando!</a><br>
+            <a href="./patrocinio.html">Parceria</a>
+          </td>
         </div>
-          
-        </footer>
-    </body>
+      </tr>
+
+
+    </table><br>
+
+    <div class="informacoes">
+      <p>CNPJ n.º 27.852.288/0001-89 - SERVIFY.COM Atividades de Internet LTDA.</p>
+      <p>
+        <a href="#">Mapa do site</a> |
+        <a href="./termos_uso.html">Termos de uso</a> |
+        <a href="./termos_uso.html">Política de privacidade</a> |
+        <a href=".//Contatos.html">Contato</a> |
+        <a href="#">Español</a>
+      </p>
+    </div>
+
+  </footer>
+</body>
+
 </html>

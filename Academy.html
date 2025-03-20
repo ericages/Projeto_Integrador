@@ -1,121 +1,140 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Academy Servify">
-    <title>Academy - Servify</title>
-    <link rel="stylesheet" href="./css/academy.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Academy Servify">
+  <title>Academy - Servify</title>
+  <link rel="stylesheet" href="./css/academy.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abel&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
+
   <header>
-      <img src="./img/servify.png" id="servify-banner" alt="Logo da empresa">
-      <input type="text" id="pesquisa-principal" placeholder="   Pesquise por um profissional">
-      <div id="cadastro">
-        <input type="button" value="Entrar" class="botaoRosa" onclick="location.href='./login.html';">
-        <input type="button" value="Criar conta" class="botaoRosa" onclick="location.href='./login.html';"> 
+    <div class="navBar">
+      <div class="navBar-logo">
+        <img src="./img/servify.png" id="servify-banner" alt="Logo da empresa" src="./js/input_navBar.js">
+        <input type="text" id="pesquisa-principal" placeholder="  Buscar">
+        <div class="navBar-links">
+          <a href="./Home.html">Home</a>
+          <a href="./Blog.html">Blog</a>
+          <a href="./Contatos.html">Contato</a>
+          <a href="./sobre.html">Sobre</a>
+        </div>
+        <div class="navBar-botao">
+          <input type="button" value="Entrar" class="botao_entra" onclick="location.href='./login.html';">
+          <input type="button" value="Criar conta" class="botao_criarConta" onclick="location.href='./login.html';">
+        </div>
       </div>
+    </div>
   </header>
 
-    <div class="titulo">
-      <br>
-        <h1>Academy - Servify</h1>
-        <br>
-        <h2>Tudo que você precisa saber para usar o máximo do Servify!</h2>
+  <div class="titulo">
+    <br>
+    <h1>Academy - Servify</h1>
+    <br>
+    <h2>Tudo que você precisa saber para usar o máximo do Servify!</h2>
+  </div>
+
+  <div class="container">
+    <div class="faq-section">
+      <div class="faq-item">
+        <h2 onclick="toggleAnswer(this)">1. Quais serviços nós oferecemos?</h2>
+        <p>Oferecemos uma ampla gama de serviços, incluindo consultoria, design, desenvolvimento de software, marketing
+          digital e muito mais.</p>
       </div>
-    
-    <div class="container">
-        <div class="faq-section">
-            <div class="faq-item">
-                <h2 onclick="toggleAnswer(this)">1. Quais serviços nós oferecemos?</h2>
-                <p>Oferecemos uma ampla gama de serviços, incluindo consultoria, design, desenvolvimento de software, marketing digital e muito mais.</p>
-            </div>
-            <div class="faq-item">
-                <h2 onclick="toggleAnswer(this)">2. Como posso contratar um serviço?</h2>
-                <p>Para contratar um serviço, basta navegar pelas categorias, escolher o profissional desejado e preencher o formulário de contato no final da página. O profissional entrará em contato para discutir os detalhes.</p>
-            </div>
-            <div class="faq-item">
-                <h2 onclick="toggleAnswer(this)">3. Quais são os preços dos serviços?</h2>
-                <p>Os preços variam de acordo com o tipo de serviço, a complexidade e o tempo de execução. Para um orçamento personalizado, entre em contato com nossa equipe.</p>
-            </div>
-            <div class="faq-item">
-                <h2 onclick="toggleAnswer(this)">4. Qual o tempo de entrega dos serviços?</h2>
-                <p>O tempo de entrega depende do serviço contratado. Geralmente, fornecemos um cronograma detalhado após a análise do seu projeto.</p>
-            </div>
-            <div class="faq-item">
-                <h2 onclick="toggleAnswer(this)">5. Posso cancelar um serviço após contratá-lo?</h2>
-                <p>Sim, você pode cancelar o serviço, mas as condições de reembolso dependem do estágio de execução do trabalho. Consulte nossa política de cancelamento para mais informações.</p>
-            </div>
-        </div>
+      <div class="faq-item">
+        <h2 onclick="toggleAnswer(this)">2. Como posso contratar um serviço?</h2>
+        <p>Para contratar um serviço, basta navegar pelas categorias, escolher o profissional desejado e preencher o
+          formulário de contato no final da página. O profissional entrará em contato para discutir os detalhes.</p>
+      </div>
+      <div class="faq-item">
+        <h2 onclick="toggleAnswer(this)">3. Quais são os preços dos serviços?</h2>
+        <p>Os preços variam de acordo com o tipo de serviço, a complexidade e o tempo de execução. Para um orçamento
+          personalizado, entre em contato com nossa equipe.</p>
+      </div>
+      <div class="faq-item">
+        <h2 onclick="toggleAnswer(this)">4. Qual o tempo de entrega dos serviços?</h2>
+        <p>O tempo de entrega depende do serviço contratado. Geralmente, fornecemos um cronograma detalhado após a
+          análise do seu projeto.</p>
+      </div>
+      <div class="faq-item">
+        <h2 onclick="toggleAnswer(this)">5. Posso cancelar um serviço após contratá-lo?</h2>
+        <p>Sim, você pode cancelar o serviço, mas as condições de reembolso dependem do estágio de execução do trabalho.
+          Consulte nossa política de cancelamento para mais informações.</p>
+      </div>
     </div>
+  </div>
 
-    <footer> 
-      <table>
-      <br>   
-        <tr>    
-          <th class="logo-imbativel">
-            <img height="75" width="160"
-              src="./img/servify.png"
-              alt="Logo da empresa"
-              class="logo_termos_uso" />
-          </th> 
+  <footer>
+    <table>
+      <br>
+      <tr>
+        <th class="logo-imbativel">
+          <img height="75" width="160" src="./img/servify.png" alt="Logo da empresa" class="logo_termos_uso" />
+        </th>
         <div class="footer-secoes">
-          
-          <th class="comunidade"> Comunidade</th>
-    
-          <th class="sobre">Sobre</th>
-        </div>  
-    
-        </tr>
-    
-        <tr>
-          <td>Preço imbatível. Diversidade inigualável.<br>
-          <img src="img/facebook.png" alt="icone do facebook" style="width: 20px; height: 20px;">facebook
-          <img src="img/twitterX.png" alt="icone do twitter(X)"style="width: 30px; height: 30px;">twitter(X)
-          <img src="img/instagram.png" alt="icone do instagram" style="width: 25px; height: 25px;">instagram</td>
-          
-    
-          <div class="footer-secoes">
-    
-            <td class="comunidade">
-              <a href="Blog.html">Blog</a><br>
-              <a href="Academy.html">Academy</a><br>
-              <a href="suporte.html">Suporte</a>
-            </td>
-    
-            <td class="sobre">
-              <a href="./Home.html">SerVify</a><br>
-              <a href="./Cadastro_de_Colaborador.html">Estamos Contratando!</a><br>
-              <a href="./patrocinio.html">Parceria</a>
-            </td>
-          </div>
-        </tr> 
-    
-      
-      </table><br>
-    
-       <div class="informacoes">
-        <p>CNPJ n.º 27.852.288/0001-89 - SERVIFY.COM Atividades de Internet LTDA.</p>
-        <p>
-            <a href="#">Mapa do site</a> | 
-            <a href="./termos_uso.html">Termos de uso</a> | 
-            <a href="./termos_uso.html">Política de privacidade</a> | 
-            <a href=".//Contatos.html">Contato</a> | 
-            <a href="#">Español</a>
-        </p>
-    </div>
-      
-    </footer>
 
-    <script>
-        function toggleAnswer(element) {
-            var faqItem = element.parentElement;
-            faqItem.classList.toggle('active');
-        }
-    </script>
+          <th class="comunidade"> Comunidade</th>
+
+          <th class="sobre">Sobre</th>
+        </div>
+
+      </tr>
+
+      <tr>
+        <td>Preço imbatível. Diversidade inigualável.<br>
+          <img src="img/facebook.png" alt="icone do facebook" style="width: 20px; height: 20px;">facebook
+          <img src="img/twitterX.png" alt="icone do twitter(X)" style="width: 30px; height: 30px;">twitter(X)
+          <img src="img/instagram.png" alt="icone do instagram" style="width: 25px; height: 25px;">instagram
+        </td>
+
+
+        <div class="footer-secoes">
+
+          <td class="comunidade">
+            <a href="Blog.html">Blog</a><br>
+            <a href="Academy.html">Academy</a><br>
+            <a href="suporte.html">Suporte</a>
+          </td>
+
+          <td class="sobre">
+            <a href="./Home.html">SerVify</a><br>
+            <a href="./Cadastro_de_Colaborador.html">Estamos Contratando!</a><br>
+            <a href="./patrocinio.html">Parceria</a>
+          </td>
+        </div>
+      </tr>
+
+
+    </table><br>
+
+    <div class="informacoes">
+      <p>CNPJ n.º 27.852.288/0001-89 - SERVIFY.COM Atividades de Internet LTDA.</p>
+      <p>
+        <a href="#">Mapa do site</a> |
+        <a href="./termos_uso.html">Termos de uso</a> |
+        <a href="./termos_uso.html">Política de privacidade</a> |
+        <a href=".//Contatos.html">Contato</a> |
+        <a href="#">Español</a>
+      </p>
+    </div>
+
+  </footer>
+
+  <script>
+    function toggleAnswer(element) {
+      var faqItem = element.parentElement;
+      faqItem.classList.toggle('active');
+    }
+  </script>
 </body>
+
 </html>

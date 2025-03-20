@@ -1,11 +1,11 @@
-/* Reset básico */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
-  /* Fonte global */
+
   body {
     font-family: 'Josefin Sans', sans-serif;
     background-color: #fefefe;
@@ -14,7 +14,6 @@
     overflow-x: hidden;
   }
   
-  /* Animações */
   @keyframes fadeInUp {
     0% {
       opacity: 0;
@@ -35,46 +34,90 @@
     }
   }
   
-  /* Header */
   header {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
-    padding: 20px 40px;
-    background: #0c045c;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    animation: fadeIn 1.2s ease-in;
-    flex-wrap: wrap;
-  }
-  
-  #servify-banner {
-    height: 50px;
-    animation: fadeInUp 1s ease-out;
-  }
-  
-  #pesquisa-principal {
-    flex: 1;
-    margin: 10px 20px;
-    padding: 10px 15px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    font-size: 16px;
-    transition: all 0.3s ease;
-  }
-  
-  #pesquisa-principal:focus {
-    border-color: #ff69b4;
-    box-shadow: 0 0 8px rgba(255, 105, 180, 0.3);
-    outline: none;
-  }
-  
-  #cadastro {
+    justify-content: center;
+    background-color: #0c045c;
+}
+
+.navBar-logo  {
     display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-  }
+}
+
+.navBar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 30px;
+}
+
+.navBar-links {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.navBar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.navBar-links a:hover {
+  color: #FF0084;
+  transition: all 0.1s ease;
+}
+
+.navBar-botao {
+    display: flex;
+    align-items: center;
+    padding-left: auto;
+    gap: 20px;
+}
+
+.botao_entra,
+.botao_criarConta {
+    background-color: #FF0084;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.botao_entra:hover,
+.botao_criarConta:hover {
+    background-color: #0056b3;
+}
+#servify-banner {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  width: 10%;
+}
+
+#servify-banner img {
+  align-items: center;
+  width: 100px;
+  height: 100px;
+}
+
+#pesquisa-principal {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  height: 38px;
+  width: 360px;
+  border-radius: 15px;
+}
   
-  /* Botão rosa com animação */
   .botaoRosa {
     background-color: #ff69b4;
     color: white;
@@ -85,22 +128,12 @@
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
   }
-  
+
   .botaoRosa:hover {
     background-color: #ff1493;
     transform: scale(1.05);
   }
   
-  /* Main */
-  .main_colab {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    animation: fadeInUp 1.4s ease-out;
-  }
   
   .foto {
     text-align: center;
@@ -113,19 +146,6 @@
     animation: fadeInUp 1.5s ease-out;
   }
   
-  #product {
-    max-width: 100%;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-  }
-  
-  #product:hover {
-    transform: scale(1.02);
-  }
-  
-  /* Preços */
   .precos {
     background-color: #ffffff;
     padding: 25px 30px;
@@ -164,7 +184,6 @@
     font-size: 16px;
   }
   
-  /* Descrição */
   .desc {
     background-color: #ffffff;
     padding: 25px 30px;
@@ -176,7 +195,6 @@
     overflow-y: auto;
   }
   
-  /* Scroll suave */
   .desc::-webkit-scrollbar {
     width: 8px;
   }
@@ -249,13 +267,11 @@
     color: #ff69b4;
   }
   
-  /* Ícones redes sociais */
   footer img {
     vertical-align: middle;
     margin-right: 5px;
   }
   
-  /* Responsivo */
   @media (max-width: 768px) {
     header {
       flex-direction: column;

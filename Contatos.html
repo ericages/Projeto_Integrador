@@ -1,102 +1,115 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fale Conosco - Servify</title>
-    <link rel="stylesheet" href="./css/contato.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    
-  </head>
-  <body>
-    <header>
-      <img src="./img/servify.png" id="servify-banner" alt="Logo da empresa">
-      <input type="text" id="pesquisa-principal" placeholder="   Pesquise por um profissional">
-      <div id="cadastro">
-        <input type="button" value="Entrar" class="botaoRosa" onclick="location.href='./login.html';">
-        <input type="button" value="Criar conta" class="botaoRosa" onclick="location.href='./login.html';"> 
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fale Conosco - Servify</title>
+  <link rel="stylesheet" href="./css/contato.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abel&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <div class="navBar">
+      <div class="navBar-logo">
+        <img src="./img/servify.png" id="servify-banner" alt="Logo da empresa" src="./js/input_navBar.js">
+        <input type="text" id="pesquisa-principal" placeholder="  Buscar">
+        <div class="navBar-links">
+          <a href="./Home.html">Home</a>
+          <a href="./Blog.html">Blog</a>
+          <a href="./Contatos.html">Contato</a>
+          <a href="./sobre.html">Sobre</a>
+        </div>
+        <div class="navBar-botao">
+          <input type="button" value="Entrar" class="botao_entra" onclick="location.href='./login.html';">
+          <input type="button" value="Criar conta" class="botao_criarConta" onclick="location.href='./login.html';">
+        </div>
       </div>
+    </div>
   </header>
   <br>
   <br>
   <br>
-    <main>
-        <h1> CONTATOS </h1>
-      <h2>Entre em Contato</h2>
-      <p>Quer falar com a gente? Utilize um dos canais abaixo:</p>
-      <ul>
-        <li><strong>WhatsApp:</strong> (xx) xxxx-xxxx</li>
-        <li>
-          <strong>Instagram:</strong>
-          <a href="https://instagram.com/servify" target="_blank">@servify</a>
-        </li>
-        <li><strong>Email:</strong> contato@servify.com.br</li>
-      </ul>
-      <h2>Endereço</h2>
-      <p>Rua dos Exemplos, 123 - São Paulo, SP - Brasil</p>
-    </main>
-    <br>
-    <br>
-    <br>
-    <footer> 
-      <table>
-      <br>   
-        <tr>    
-          <th class="logo-imbativel">
-            <img height="45" width="110"
-              src="./img/servify.con.png"
-              alt="Logo da empresa"
-              class="logo_termos_uso" />
-          </th> 
+  <main>
+    <h1> CONTATOS </h1>
+    <h2>Entre em Contato</h2>
+    <p>Quer falar com a gente? Utilize um dos canais abaixo:</p>
+    <ul>
+      <li><strong>WhatsApp:</strong> (xx) xxxx-xxxx</li>
+      <li>
+        <strong>Instagram:</strong>
+        <a href="https://instagram.com/servify" target="_blank">@servify</a>
+      </li>
+      <li><strong>Email:</strong> contato@servify.com.br</li>
+    </ul>
+    <h2>Endereço</h2>
+    <p>Rua dos Exemplos, 123 - São Paulo, SP - Brasil</p>
+  </main>
+  <br>
+  <br>
+  <br>
+  <footer>
+    <table>
+      <br>
+      <tr>
+        <th class="logo-imbativel">
+          <img height="45" width="110" src="./img/servify.con.png" alt="Logo da empresa" class="logo_termos_uso" />
+        </th>
         <div class="footer-secoes">
-          
+
           <th class="comunidade"> Comunidade</th>
-    
+
           <th class="sobre">Sobre</th>
-        </div>  
-    
-        </tr>
-    
-        <tr>
-          <td>Preço imbatível. Diversidade inigualável.<br>
+        </div>
+
+      </tr>
+
+      <tr>
+        <td>Preço imbatível. Diversidade inigualável.<br>
           <img src="img/facebook.png" alt="icone do facebook" style="width: 20px; height: 20px;">facebook
-          <img src="img/twitterX.png" alt="icone do twitter(X)"style="width: 30px; height: 30px;">twitter(X)
-          <img src="img/instagram.png" alt="icone do instagram" style="width: 25px; height: 25px;">instagram</td>
-          
-    
-          <div class="footer-secoes">
-    
-            <td class="comunidade">
-              <a href="Blog.html">Blog</a><br>
-              <a href="Academy.html">Academy</a><br>
-              <a href="suporte.html">Suporte</a>
-            </td>
-    
-            <td class="sobre">
-              <a href="#">SerVify</a><br>
-              <a href="#">Estamos Contratando!</a><br>
-              <a href="#">Parceria</a>
-            </td>
-          </div>
-        </tr> 
-    
-      
-      </table><br>
-    
-       <div class="informacoes">
-        <p>CNPJ n.º 27.852.288/0001-89 - SERVIFY.COM Atividades de Internet LTDA.</p>
-        <p>
-            <a href="#">Mapa do site</a> | 
-            <a href="termos_uso.html">Termos de uso</a> | 
-            <a href="#">Política de privacidade</a> | 
-            <a href="#">Contato</a> | 
-            <a href="#">Español</a>
-        </p>
+          <img src="img/twitterX.png" alt="icone do twitter(X)" style="width: 30px; height: 30px;">twitter(X)
+          <img src="img/instagram.png" alt="icone do instagram" style="width: 25px; height: 25px;">instagram
+        </td>
+
+
+        <div class="footer-secoes">
+
+          <td class="comunidade">
+            <a href="Blog.html">Blog</a><br>
+            <a href="Academy.html">Academy</a><br>
+            <a href="suporte.html">Suporte</a>
+          </td>
+
+          <td class="sobre">
+            <a href="#">SerVify</a><br>
+            <a href="#">Estamos Contratando!</a><br>
+            <a href="#">Parceria</a>
+          </td>
+        </div>
+      </tr>
+
+
+    </table><br>
+
+    <div class="informacoes">
+      <p>CNPJ n.º 27.852.288/0001-89 - SERVIFY.COM Atividades de Internet LTDA.</p>
+      <p>
+        <a href="#">Mapa do site</a> |
+        <a href="termos_uso.html">Termos de uso</a> |
+        <a href="#">Política de privacidade</a> |
+        <a href="#">Contato</a> |
+        <a href="#">Español</a>
+      </p>
     </div>
-      
-    </footer>
-  </body>
+
+  </footer>
+</body>
+
 </html>
