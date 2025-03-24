@@ -4,12 +4,21 @@
     font-family:"abel",sans-serif;
 }
 
+body {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: 1fr auto;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
 header {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   background-color: #0c045c;
+  margin-bottom: 80px;
 }
 
 .navBar-logo  {
@@ -92,10 +101,7 @@ border-radius: 15px;
     background-color: #0056b3;
 }
 
-body {
-    background-color: #f9f9f9;
-    color: #333;
-}
+
 
 .titulo h1 {
     color: black;
@@ -108,7 +114,7 @@ body {
 }
 main {
     max-width: 1200px;
-    margin: 20px auto;
+    margin: 50px auto;
     padding: 20px;
 }
 
@@ -167,7 +173,7 @@ footer {
     font-size: 14px;
     color: white;
     animation: fadeIn 2.2s ease-in;
-    ;
+    margin-top: 60px;
   }
   
   

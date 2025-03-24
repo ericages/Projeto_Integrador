@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Termos de Uso</title>
+    <link rel="icon" type="img/png" href="./img/img-logo-sf/logo-sf.png">
     <link rel="stylesheet" href="./css/termos_uso.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,13 +17,23 @@
 
 <body>
     <header>
-        <img src="./img/servify.png" id="servify-banner" alt="Logo da empresa">
-        <input type="text" id="pesquisa-principal" placeholder="   Pesquise por um profissional">
-        <div id="cadastro">
-            <input type="button" value="Entrar" class="botaoRosa" onclick="location.href='./login.html';">
-            <input type="button" value="Criar conta" class="botaoRosa" onclick="location.href='./login.html';">
+        <div class="navBar">
+          <div class="navBar-logo">
+            <img src="./img/servify.png" id="servify-banner" alt="Logo da empresa" src="./js/input_navBar.js">
+            <input type="text" id="pesquisa-principal" placeholder="  Buscar">
+            <div class="navBar-links">
+              <a href="./Home.html">Home</a>
+              <a href="./Blog.html">Blog</a>
+              <a href="./Contatos.html">Contato</a>
+              <a href="./sobre.html">Sobre</a>
+            </div>
+            <div class="navBar-botao">
+              <input type="button" value="Entrar" class="botao_entra" onclick="location.href='./login.html';">
+              <input type="button" value="Criar conta" class="botao_criarConta" onclick="location.href='./login.html';">
+            </div>
+          </div>
         </div>
-    </header>
+      </header>
     <main>
         <h1>TERMOS DE USO</h1>
         <p>Servify</p>

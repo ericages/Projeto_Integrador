@@ -1,10 +1,11 @@
 body{
     font-family:"Josefin Sans",sans-serif;
     color: #ffffff;
-    background: linear-gradient( to bottom, #000, #000, #000, #ff0084);
-    margin: 40px;
-    padding: 0;
+    background: linear-gradient(to bottom, #000, #000, #000, #ff0084);
+    margin-bottom: 190px;
+    padding: 194.5px;
 }
+
 
 table{
     font-family: "Jomhuria", sans-serif;
@@ -124,3 +125,20 @@ fieldset{
   .erro {
     border: 20px solid red;
   }
+
+  @keyframes wave {
+    0% {
+      background: linear-gradient(to bottom, #000, #ff0084);
+    }
+    50% {
+      background: linear-gradient(to bottom, #ff0084, #000);
+    }
+    100% {
+      background: linear-gradient(to bottom, #000, #ff0084);
+    }
+  }
+  
+  .elemento {
+    animation: wave 5s infinite ease-in-out;
+  }
+  

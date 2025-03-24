@@ -9,11 +9,13 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <title>Servify - Colaboradores</title>
+  <link rel="icon" typr="img/png" href="./img/img-logo-sf/logo-sf.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Abel&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
+  <script src="js/pag-servico.js" defer></script>
 </head>
 
 <body>
@@ -36,46 +38,121 @@
       </div>
     </div>
   </header>
-  <main class="main_colab">
-    <div class="foto">
-      <h1>Eu vou criar uma landing page profissional</h1>
-      <img src="./img/img.pag_colaboradores/banner.png" id="product">
-    </div>
 
-    <div aside class="precos">
-      <h2>Valor do serviço</h2>
-      <hr>
-      <form>
-        <input type="radio" id="html" name="fav_language" value="HTML">
-        <label for="html">Em 7 dias - R$150,00</label><br>
-        <input type="radio" id="css" name="fav_language" value="CSS">
-        <label for="css">Em 3 dias - R$195,00</label><br>
-        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-        <label for="javascript">Em 1 dias - R$260,00</label>
-      </form>
-      <input type="button" value="COMPRE AGORA" class="botaoRosa">
-    </div>
-
-    <div class="desc">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, autem ipsa reprehenderit odio itaque
-        asperiores nemo praesentium porro repudiandae aut ex voluptatem est alias odit enim minima dignissimos
-        distinctio necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, a quae placeat quidem
-        ut quisquam amet ad aspernatur voluptatem suscipit nulla dolor consequatur deleniti enim laborum dolorum
-        consectetur repellat iste velit sapiente. Aliquam maiores quis praesentium dolores ab est molestiae voluptate
-        inventore dolorem veritatis, dolorum eligendi aperiam officia nisi, quasi eaque autem beatae recusandae atque.
-        Error enim accusamus quisquam reiciendis libero, assumenda labore expedita vel deleniti porro eligendi
-        aspernatur saepe doloremque ipsa explicabo, a rem consectetur quasi alias est voluptates hic aliquam similique
-        sapiente. Vel illum nihil tenetur quo exercitationem nesciunt tempore quos quam odio alias temporibus, ratione
-        repellat accusantium perspiciatis voluptatem fuga possimus architecto cum molestiae maxime voluptatum rerum
-        corporis deleniti adipisci? Ad dolores fugiat error libero perspiciatis alias ullam expedita rem minima quaerat
-        similique veritatis porro corrupti velit a minus reiciendis, qui aspernatur vero accusantium nisi unde quia. Et,
-        autem officia adipisci, veritatis molestiae fugit soluta quibusdam velit molestias repudiandae iure dolorem
-        tempore harum magni eaque distinctio nemo consequatur iste consectetur id. Incidunt est corrupti repellat,
-        commodi minus fuga nostrum animi nemo, nulla culpa possimus ipsa facere saepe exercitationem ab accusantium
-        laboriosam sed consequatur magni ad? Nostrum corporis quasi doloremque obcaecati amet quia veritatis quam sit
-        officia voluptate?</p>
-    </div>
+  <main class="main_colab" id="conteudo">
+    <!-- Conteúdo será carregado via JavaScript -->
   </main>
+
+  <script>
+    const servicos = {
+      1: {
+        titulo: "Eu vou fazer seu produto vender todo dia",
+        imagem: "./img-home/produto vender.webp",
+        descricao: "Campanhas no Google, Facebook, Instagram e TikTok para atrair clientes ideais e gerar vendas...",
+        precos: [
+          { prazo: "Em 5 dias", valor: "R$200,00" },
+          { prazo: "Em 2 dias", valor: "R$250,00" },
+          { prazo: "Em 1 dia", valor: "R$300,00" }
+        ]
+      },
+
+      2: {
+        titulo: "Eu vou criar uma landing page profissional",
+        imagem: "./img-home/Landing-Page.png",
+        descricao: `
+          Se você precisa aumentar suas vendas, captar leads ou divulgar um produto ou serviço, eu vou criar uma landing
+          page profissional pensada exatamente para isso: gerar resultados reais...
+          <br><br>
+          Ter uma landing page profissional é o primeiro passo para transformar visitantes em clientes. Invista em uma
+          presença online que realmente funcione e se destaque da concorrência.
+        `,
+        precos: [
+          { prazo: "Em 7 dias", valor: "R$150,00" },
+          { prazo: "Em 3 dias", valor: "R$195,00" },
+          { prazo: "Em 1 dia", valor: "R$260,00" }
+        ]
+      },
+
+      3: {
+    titulo: "Eu vou criar um post profissional para sua empresa",
+    imagem: "./img-home/post-profissional.png",
+    descricao: "Designer gráfico especializado em mídias sociais...",
+    precos: [
+      { prazo: "Em 7 dias", valor: "R$80,00" },
+      { prazo: "Em 3 dias", valor: "R$120,00" },
+      { prazo: "Em 1 dia", valor: "R$180,00"}
+    ]
+  },
+  4: {
+    titulo: "Eu vou fazer um currículo profissional pra você",
+    imagem: "./img-home/currículo.jpg",
+    descricao: "Currículos profissionais para ajudar no processo de busca de emprego...",
+    precos: [
+      { prazo: "Em 7 dias", valor: "R$70,00" },
+      { prazo: "Em 3 dias", valor: "R$100,00" },
+      { prazo: "Em 1 dia", valor: "R$145,00"}
+    ]
+  },
+  5: {
+    titulo: "Eu vou Criar ou revisar seu código em Java",
+    imagem: "./img-home/codigo.jpeg",
+    descricao: "Criação e revisão de código em Java, com foco em qualidade...",
+    precos: [
+      { prazo: "Em 7 dias", valor: "R$250,00" },
+      { prazo: "Em 3 dias", valor: "R$300,00" },
+      { prazo: "Em 1 dia", valor: "R$400,00" }
+    ]
+  },
+  6: {
+    titulo: "Eu vou Registrar a sua Marca em 24h",
+    imagem: "./img-home/marca.png",
+    descricao: "Advogada especializada em propriedade intelectual...",
+    precos: [
+      { prazo: "24 horas", valor: "R$500,00" }
+    ]
+  }
+};
+
+
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const id = urlParams.get('id');
+
+    const conteudo = document.getElementById('conteudo');
+
+    if (servicos[id]) {
+      const servico = servicos[id];
+      let precosHTML = '';
+      servico.precos.forEach((preco, index) => {
+        precosHTML += `
+          <input type="radio" id="opcao${index}" name="prazo" value="${preco.valor}">
+          <label for="opcao${index}">${preco.prazo} - ${preco.valor}</label><br>
+        `;
+      });
+
+      conteudo.innerHTML = `
+        <div class="foto">
+          <h1>${servico.titulo}</h1>
+          <img src="${servico.imagem}" alt="${servico.titulo}" id="product">
+        </div>
+
+        <div class="precos">
+          <h2>Valor do serviço</h2>
+          <hr>
+          <form>
+            ${precosHTML}
+          </form>
+          <input type="button" value="COMPRE AGORA" class="botaoRosa">
+        </div>
+
+        <div class="desc">
+          <p>${servico.descricao}</p>
+        </div>
+      `;
+    } else {
+      conteudo.innerHTML = "<p>Serviço não encontrado.</p>";
+    }
+  </script>
 
   <br><br>
 

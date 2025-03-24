@@ -134,6 +134,14 @@
     transform: scale(1.05);
   }
   
+  main {
+    display: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    max-width: 800px;
+    min-height: 500px;
+  }
   
   .foto {
     text-align: center;
@@ -141,7 +149,7 @@
   
   .foto h1 {
     font-size: 2.2rem;
-    margin-bottom: 20px;
+    margin: 80px 0 30px 0px;
     color: #222;
     animation: fadeInUp 1.5s ease-out;
   }

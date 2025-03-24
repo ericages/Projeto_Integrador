@@ -4,6 +4,7 @@
     font-family:"abel",sans-serif;
 }
 
+
 header {
     display: flex;
     flex-wrap: wrap;
@@ -12,7 +13,7 @@ header {
     background-color: #0c045c;
 }
 
-/*.navBar-logo  {
+.navBar-logo  {
     display: flex;
 }
 
@@ -49,7 +50,44 @@ header {
     align-items: center;
     padding-left: auto;
     gap: 20px;
-}**/
+}
+
+.botao_entra,
+.botao_criarConta {
+    background-color: #FF0084;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.botao_entra:hover,
+.botao_criarConta:hover {
+    background-color: #0056b3;
+}
+#servify-banner {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  width: 10%;
+}
+
+#servify-banner img {
+  align-items: center;
+  width: 100px;
+  height: 100px;
+}
+
+#pesquisa-principal {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  height: 38px;
+  width: 360px;
+  border-radius: 15px;
+}
 
 .botao_entra,
 .botao_criarConta {
