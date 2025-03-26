@@ -1,0 +1,41 @@
+CREATE TABLE Cliente (
+    id_cliente SERIAL PRIMARY KEY,  
+    nome VARCHAR(255) NOT NULL,  
+    email VARCHAR(255) NOT NULL,  
+    telefone VARCHAR(20) NOT NULL  
+);
+
+CREATE TABLE Servico (
+    id_servico SERIAL PRIMARY KEY,  
+    categoria VARCHAR(255) NOT NULL,  
+    preco DECIMAL(10,2) NOT NULL,  
+    prazo INT NOT NULL  
+);
+
+CREATE TABLE Prestador (
+    id_prestador SERIAL PRIMARY KEY,  
+    nome VARCHAR(255) NOT NULL,  
+    especialidade VARCHAR(255) NOT NULL,  
+    telefone VARCHAR(20) NOT NULL  
+);
+
+CREATE TABLE Contratacao (
+    id_contratacao SERIAL PRIMARY KEY,  
+    id_cliente INT NOT NULL,  
+    id_prestador INT NOT NULL,  
+    id_servico INT NOT NULL,  
+    data_contratacao DATE NOT NULL,
+    FOREIGN KEY (id_cliente) REFERENCES Cliente (id_cliente),
+    FOREIGN KEY (id_prestador) REFERENCES Prestador (id_prestador),
+    FOREIGN KEY (id_servico) REFERENCES Servico (id_servico)
+);
+
+CREATE TABLE Gera (
+    id_contratacao INT NOT NULL,  
+    id_prestador INT NOT NULL,  
+    id_cliente INT NOT NULL,
+    PRIMARY KEY (id_contratacao, id_prestador, id_cliente),
+    FOREIGN KEY (id_contratacao) REFERENCES Contratacao (id_contratacao),
+    FOREIGN KEY (id_prestador) REFERENCES Prestador (id_prestador),
+    FOREIGN KEY (id_cliente) REFERENCES Cliente (id_cliente)
+);
