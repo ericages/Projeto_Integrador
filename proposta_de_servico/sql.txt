@@ -1,41 +1,78 @@
-CREATE TABLE Cliente (
-    id_cliente SERIAL PRIMARY KEY,  
-    nome VARCHAR(255) NOT NULL,  
-    email VARCHAR(255) NOT NULL,  
-    telefone VARCHAR(20) NOT NULL  
-);
+--Criando tabelas--
 
-CREATE TABLE Servico (
+CREATE TABLE Cliente ( 
+    telefone VARCHAR(15) NOT NULL,  
+    email VARCHAR(25) NOT NULL,  
+    nome VARCHAR(25) NOT NULL,  
+    id_cliente SERIAL PRIMARY KEY  
+); 
+
+CREATE TABLE Servico ( 
     id_servico SERIAL PRIMARY KEY,  
-    categoria VARCHAR(255) NOT NULL,  
+    categoria VARCHAR(50) NOT NULL,  
     preco DECIMAL(10,2) NOT NULL,  
-    prazo INT NOT NULL  
-);
+    prazo VARCHAR(20) NOT NULL  
+); 
 
-CREATE TABLE Prestador (
+CREATE TABLE Prestador ( 
     id_prestador SERIAL PRIMARY KEY,  
-    nome VARCHAR(255) NOT NULL,  
-    especialidade VARCHAR(255) NOT NULL,  
-    telefone VARCHAR(20) NOT NULL  
-);
+    nome VARCHAR(25) NOT NULL,  
+    especialidade VARCHAR(50) NOT NULL,  
+    telefone VARCHAR(15) NOT NULL  
+); 
 
-CREATE TABLE Contratacao (
+CREATE TABLE Contratacao ( 
     id_contratacao SERIAL PRIMARY KEY,  
     id_cliente INT NOT NULL,  
     id_prestador INT NOT NULL,  
     id_servico INT NOT NULL,  
-    data_contratacao DATE NOT NULL,
-    FOREIGN KEY (id_cliente) REFERENCES Cliente (id_cliente),
-    FOREIGN KEY (id_prestador) REFERENCES Prestador (id_prestador),
-    FOREIGN KEY (id_servico) REFERENCES Servico (id_servico)
+    data_contratacao DATE NOT NULL,  
+    FOREIGN KEY (id_cliente) REFERENCES Cliente (id_cliente),  
+    FOREIGN KEY (id_prestador) REFERENCES Prestador (id_prestador),  
+    FOREIGN KEY (id_servico) REFERENCES Servico (id_servico)  
 );
 
-CREATE TABLE Gera (
-    id_contratacao INT NOT NULL,  
-    id_prestador INT NOT NULL,  
-    id_cliente INT NOT NULL,
-    PRIMARY KEY (id_contratacao, id_prestador, id_cliente),
-    FOREIGN KEY (id_contratacao) REFERENCES Contratacao (id_contratacao),
-    FOREIGN KEY (id_prestador) REFERENCES Prestador (id_prestador),
-    FOREIGN KEY (id_cliente) REFERENCES Cliente (id_cliente)
-);
+--Inserindo dados--
+
+INSERT INTO cliente (nome, telefone, email, id_cliente)
+	VALUES
+    ('Maria', 71912345678, 'maria@live.com', 1),
+    ('Paula', 71987654321, 'paula@live.com', 2),
+    ('Carlos', 21923459876, 'carlos@live.com', 3);
+
+INSERT INTO prestador (nome, telefone, especialidade, id_prestador)
+	VALUES
+    ('José', 23459876, 'design gráfico', 12),
+    ('Marcos', 40045678, 'criação de webpage', 25),
+    ('Alex', 20024858, 'narração de vídeos', 38);
+    
+INSERT INTO servico (id_servico, categoria, preco, prazo)
+	VALUES
+    ('501', 'design de logotipo', 250.00, '7 dias'),
+    ('302', 'criação de webpage', 500.00, '14 dias'),
+    ('405', 'narração de short vídeo', 150.00, '2 dias');
+    
+INSERT INTO Contratacao (id_cliente, id_prestador, id_servico, data_contratacao)
+VALUES
+    (1, 12, 501, '2024-03-26'),
+    (2, 25, 302, '2024-03-26'),
+    (3, 38, 405, '2024-03-26');
+
+--Juntando tabelas com JOIN--    
+SELECT 
+    c.nome AS Cliente, 
+    p.nome AS Prestador, 
+    s.categoria AS Servico, 
+    s.preco AS Preco, 
+    ct.data_contratacao AS Data_Contratacao
+FROM Contratacao ct
+JOIN Cliente c ON ct.id_cliente = c.id_cliente
+JOIN Prestador p ON ct.id_prestador = p.id_prestador
+JOIN Servico s ON ct.id_servico = s.id_servico;
+
+
+/*Cliente c: Relaciona id_cliente na tabela Contratacao com Cliente.
+
+Prestador p: Relaciona id_prestador na tabela Contratacao com Prestador.
+
+Servico s: Relaciona id_servico na tabela Contratacao com Servico.*/
